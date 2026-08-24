@@ -1,0 +1,2988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c90261867d4c3fccdc1b1d1523d882c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2c90261867d4c3fccdc1b1d1523d882c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2c90261867d4c3fccdc1b1d1523d882c = L.map(
+                "map_2c90261867d4c3fccdc1b1d1523d882c",
+                {
+                    center: [64.5401, 40.5433],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbeebdda1cf29f40a36448ec5b6bc2a3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fbeebdda1cf29f40a36448ec5b6bc2a3.addTo(map_2c90261867d4c3fccdc1b1d1523d882c);
+        
+    
+            var marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_b9e60e6566bcf7ea174ef429e9e105d4 = L.circleMarker(
+                [64.58672, 40.515663],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_2353dcf5dcafcbee8febda16b381c789 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7dc6bd0df3b0ffed67dbbab0d523e266 = $(`<div id="html_7dc6bd0df3b0ffed67dbbab0d523e266" style="width: 100.0%; height: 100.0%;"><b>2-комн., 90 м²</b><br>Цена: 50000 ₽/мес<br>Цена за м²: 556<br>Этаж: 1 из 3<br>Год постройки: 2000<br><a href='https://realty.yandex.ru/offer/1106637747842887169/' target='_blank'>Объявление</a></div>`)[0];
+                popup_2353dcf5dcafcbee8febda16b381c789.setContent(html_7dc6bd0df3b0ffed67dbbab0d523e266);
+            
+        
+
+        circle_marker_b9e60e6566bcf7ea174ef429e9e105d4.bindPopup(popup_2353dcf5dcafcbee8febda16b381c789)
+        ;
+
+        
+    
+    
+            var circle_marker_cb6c4b1a812c77bdd460458737e64cc3 = L.circleMarker(
+                [64.547195, 40.573948],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_4e8f81c1b2ae3f26c5daa980ebbc2ee1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf073dc8258307141e9c6a0904d95ed3 = $(`<div id="html_bf073dc8258307141e9c6a0904d95ed3" style="width: 100.0%; height: 100.0%;"><b>2-комн., 54 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 407<br>Этаж: 5 из 9<br>Год постройки: 1974<br><a href='https://realty.yandex.ru/offer/1198973562525317120/' target='_blank'>Объявление</a></div>`)[0];
+                popup_4e8f81c1b2ae3f26c5daa980ebbc2ee1.setContent(html_bf073dc8258307141e9c6a0904d95ed3);
+            
+        
+
+        circle_marker_cb6c4b1a812c77bdd460458737e64cc3.bindPopup(popup_4e8f81c1b2ae3f26c5daa980ebbc2ee1)
+        ;
+
+        
+    
+    
+            var circle_marker_c1d8bb0b53af015185e62704f164ce6c = L.circleMarker(
+                [64.55411, 40.53745],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_c0050bdc38dfc54da622a849c06beb3e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a146a15981ba120da9f8b03287f71ab4 = $(`<div id="html_a146a15981ba120da9f8b03287f71ab4" style="width: 100.0%; height: 100.0%;"><b>1-комн., 44 м²</b><br>Цена: 32000 ₽/мес<br>Цена за м²: 731<br>Этаж: 6 из 9<br>Год постройки: 2008<br><a href='https://realty.yandex.ru/offer/1232837691192031745/' target='_blank'>Объявление</a></div>`)[0];
+                popup_c0050bdc38dfc54da622a849c06beb3e.setContent(html_a146a15981ba120da9f8b03287f71ab4);
+            
+        
+
+        circle_marker_c1d8bb0b53af015185e62704f164ce6c.bindPopup(popup_c0050bdc38dfc54da622a849c06beb3e)
+        ;
+
+        
+    
+    
+            var circle_marker_4bbaf410cd6023fd907598c9dfd0dc22 = L.circleMarker(
+                [64.52738, 40.60342],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1e978830adf955772c59737234a4fe94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac52b317655ed19ae71fe9b212b8cc0f = $(`<div id="html_ac52b317655ed19ae71fe9b212b8cc0f" style="width: 100.0%; height: 100.0%;"><b>2-комн., 52 м²</b><br>Цена: 26000 ₽/мес<br>Цена за м²: 502<br>Этаж: 3 из 10<br>Год постройки: 2002<br><a href='https://realty.yandex.ru/offer/1360453884302373588/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1e978830adf955772c59737234a4fe94.setContent(html_ac52b317655ed19ae71fe9b212b8cc0f);
+            
+        
+
+        circle_marker_4bbaf410cd6023fd907598c9dfd0dc22.bindPopup(popup_1e978830adf955772c59737234a4fe94)
+        ;
+
+        
+    
+    
+            var circle_marker_8a34f15e32b77001c3cd51b4747826b5 = L.circleMarker(
+                [64.48984, 40.7174],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_baf11ceb84d2f99a6ca97bd522d06c03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48f5ad035f0389e55eca27bf3aef9a12 = $(`<div id="html_48f5ad035f0389e55eca27bf3aef9a12" style="width: 100.0%; height: 100.0%;"><b>1-комн., 37 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 595<br>Этаж: 2 из 7<br>Год постройки: 2011<br><a href='https://realty.yandex.ru/offer/1562632997629356289/' target='_blank'>Объявление</a></div>`)[0];
+                popup_baf11ceb84d2f99a6ca97bd522d06c03.setContent(html_48f5ad035f0389e55eca27bf3aef9a12);
+            
+        
+
+        circle_marker_8a34f15e32b77001c3cd51b4747826b5.bindPopup(popup_baf11ceb84d2f99a6ca97bd522d06c03)
+        ;
+
+        
+    
+    
+            var circle_marker_dfde7b61a65d47fd8fd7a78a8e6a349b = L.circleMarker(
+                [64.539604, 40.530483],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_b4d824739cbf0eaa2736b175016f6747 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0ef1323f99c122afcc931204a214df1a = $(`<div id="html_0ef1323f99c122afcc931204a214df1a" style="width: 100.0%; height: 100.0%;"><b>1-комн., 35 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 629<br>Этаж: 10 из 10<br>Год постройки: 1992<br><a href='https://realty.yandex.ru/offer/1639114035612728832/' target='_blank'>Объявление</a></div>`)[0];
+                popup_b4d824739cbf0eaa2736b175016f6747.setContent(html_0ef1323f99c122afcc931204a214df1a);
+            
+        
+
+        circle_marker_dfde7b61a65d47fd8fd7a78a8e6a349b.bindPopup(popup_b4d824739cbf0eaa2736b175016f6747)
+        ;
+
+        
+    
+    
+            var circle_marker_8047f88ec926ae49cca94c2dab7e3858 = L.circleMarker(
+                [64.537254, 40.532883],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7f8136f38db47412dd6b70cff30fc6ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1a722887f00c20b971201300d9090bee = $(`<div id="html_1a722887f00c20b971201300d9090bee" style="width: 100.0%; height: 100.0%;"><b>0-комн., 32 м²</b><br>Цена: 32000 ₽/мес<br>Цена за м²: 1000<br>Этаж: 14 из 18<br>Год постройки: 2019<br><a href='https://realty.yandex.ru/offer/16724061666474497/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7f8136f38db47412dd6b70cff30fc6ca.setContent(html_1a722887f00c20b971201300d9090bee);
+            
+        
+
+        circle_marker_8047f88ec926ae49cca94c2dab7e3858.bindPopup(popup_7f8136f38db47412dd6b70cff30fc6ca)
+        ;
+
+        
+    
+    
+            var circle_marker_cffbe5cd54cf087ecfd6d2a6d39f6397 = L.circleMarker(
+                [64.658554, 40.54819],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_89e04faeb888ec884f4e29044fabf84b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44c1c7ec34946fd4612208a797e1d16f = $(`<div id="html_44c1c7ec34946fd4612208a797e1d16f" style="width: 100.0%; height: 100.0%;"><b>2-комн., 50 м²</b><br>Цена: 3000 ₽/мес<br>Цена за м²: 60<br>Этаж: 1 из 2<br>Год постройки: 1970<br><a href='https://realty.yandex.ru/offer/1684322624411915008/' target='_blank'>Объявление</a></div>`)[0];
+                popup_89e04faeb888ec884f4e29044fabf84b.setContent(html_44c1c7ec34946fd4612208a797e1d16f);
+            
+        
+
+        circle_marker_cffbe5cd54cf087ecfd6d2a6d39f6397.bindPopup(popup_89e04faeb888ec884f4e29044fabf84b)
+        ;
+
+        
+    
+    
+            var circle_marker_f5adc399aa26c989ed15343e637cfcb0 = L.circleMarker(
+                [64.53791, 40.53387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_b246eb87ab1da07d0022eb7e6732ad36 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90974a961317c762ef383517eea1a07b = $(`<div id="html_90974a961317c762ef383517eea1a07b" style="width: 100.0%; height: 100.0%;"><b>0-комн., 25 м²</b><br>Цена: 35000 ₽/мес<br>Цена за м²: 1400<br>Этаж: 2 из 4<br>Год постройки: 2001<br><a href='https://realty.yandex.ru/offer/1755120019964177920/' target='_blank'>Объявление</a></div>`)[0];
+                popup_b246eb87ab1da07d0022eb7e6732ad36.setContent(html_90974a961317c762ef383517eea1a07b);
+            
+        
+
+        circle_marker_f5adc399aa26c989ed15343e637cfcb0.bindPopup(popup_b246eb87ab1da07d0022eb7e6732ad36)
+        ;
+
+        
+    
+    
+            var circle_marker_dcb06afb92a1393ca0fb067b3292f40a = L.circleMarker(
+                [64.54748, 40.548443],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_d77535a0f130ff810f72d35e02081933 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1d597f0e2172ccd52bdf8b2f144e1ed0 = $(`<div id="html_1d597f0e2172ccd52bdf8b2f144e1ed0" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 22500 ₽/мес<br>Цена за м²: 703<br>Этаж: 1 из 9<br>Год постройки: 1976<br><a href='https://realty.yandex.ru/offer/1899375724862423552/' target='_blank'>Объявление</a></div>`)[0];
+                popup_d77535a0f130ff810f72d35e02081933.setContent(html_1d597f0e2172ccd52bdf8b2f144e1ed0);
+            
+        
+
+        circle_marker_dcb06afb92a1393ca0fb067b3292f40a.bindPopup(popup_d77535a0f130ff810f72d35e02081933)
+        ;
+
+        
+    
+    
+            var circle_marker_f9212c2b14f54cf479cf537a103db7c9 = L.circleMarker(
+                [64.57727, 40.515358],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7db01ffe20d4c2024afe637d73d6e467 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b9a99598ad561dcba7a5fd71288e65cd = $(`<div id="html_b9a99598ad561dcba7a5fd71288e65cd" style="width: 100.0%; height: 100.0%;"><b>2-комн., 46 м²</b><br>Цена: 35000 ₽/мес<br>Цена за м²: 761<br>Этаж: 9 из 9<br>Год постройки: 1984<br><a href='https://realty.yandex.ru/offer/2048459979427163393/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7db01ffe20d4c2024afe637d73d6e467.setContent(html_b9a99598ad561dcba7a5fd71288e65cd);
+            
+        
+
+        circle_marker_f9212c2b14f54cf479cf537a103db7c9.bindPopup(popup_7db01ffe20d4c2024afe637d73d6e467)
+        ;
+
+        
+    
+    
+            var circle_marker_170a04cff2024d971a7d7b5a1c189c4b = L.circleMarker(
+                [64.5768, 40.510033],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_9075ae49f1fe7f9d97247ad740f1578a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0053b103cc0df92a46aef3c70eea2e37 = $(`<div id="html_0053b103cc0df92a46aef3c70eea2e37" style="width: 100.0%; height: 100.0%;"><b>2-комн., 51 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 490<br>Этаж: 4 из 9<br>Год постройки: 1993<br><a href='https://realty.yandex.ru/offer/2333987531785893889/' target='_blank'>Объявление</a></div>`)[0];
+                popup_9075ae49f1fe7f9d97247ad740f1578a.setContent(html_0053b103cc0df92a46aef3c70eea2e37);
+            
+        
+
+        circle_marker_170a04cff2024d971a7d7b5a1c189c4b.bindPopup(popup_9075ae49f1fe7f9d97247ad740f1578a)
+        ;
+
+        
+    
+    
+            var circle_marker_d9f9ae445270aa928aea1d5eb01ed680 = L.circleMarker(
+                [64.544395, 40.55129],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1eaed2e949b8267d76a0dbb6f99bcc69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b2a7ca5903086d1b86507f8aa5a1fda = $(`<div id="html_2b2a7ca5903086d1b86507f8aa5a1fda" style="width: 100.0%; height: 100.0%;"><b>1-комн., 30 м²</b><br>Цена: 12000 ₽/мес<br>Цена за м²: 400<br>Этаж: 1 из 2<br>Год постройки: 1960<br><a href='https://realty.yandex.ru/offer/2628727513477125120/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1eaed2e949b8267d76a0dbb6f99bcc69.setContent(html_2b2a7ca5903086d1b86507f8aa5a1fda);
+            
+        
+
+        circle_marker_d9f9ae445270aa928aea1d5eb01ed680.bindPopup(popup_1eaed2e949b8267d76a0dbb6f99bcc69)
+        ;
+
+        
+    
+    
+            var circle_marker_309671325459a0550df1fad1aeaafef9 = L.circleMarker(
+                [64.66212, 40.543636],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_064a7b58905d72ad9029f4ce4b33e908 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_737111eb058a3def1a8604668b2edfc7 = $(`<div id="html_737111eb058a3def1a8604668b2edfc7" style="width: 100.0%; height: 100.0%;"><b>0-комн., 18 м²</b><br>Цена: 15000 ₽/мес<br>Цена за м²: 833<br>Этаж: 1 из 9<br>Год постройки: 1987<br><a href='https://realty.yandex.ru/offer/2839450234718476032/' target='_blank'>Объявление</a></div>`)[0];
+                popup_064a7b58905d72ad9029f4ce4b33e908.setContent(html_737111eb058a3def1a8604668b2edfc7);
+            
+        
+
+        circle_marker_309671325459a0550df1fad1aeaafef9.bindPopup(popup_064a7b58905d72ad9029f4ce4b33e908)
+        ;
+
+        
+    
+    
+            var circle_marker_f249fc3ccfca7c3ad893eb8884202055 = L.circleMarker(
+                [64.52707, 40.590214],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_57210e1fc35079343da34daa0af16e2e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9a77d6f3cb36ef4ec51dcf587df77aef = $(`<div id="html_9a77d6f3cb36ef4ec51dcf587df77aef" style="width: 100.0%; height: 100.0%;"><b>1-комн., 40 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 625<br>Этаж: 2 из 9<br>Год постройки: 1982<br><a href='https://realty.yandex.ru/offer/2982442641130941184/' target='_blank'>Объявление</a></div>`)[0];
+                popup_57210e1fc35079343da34daa0af16e2e.setContent(html_9a77d6f3cb36ef4ec51dcf587df77aef);
+            
+        
+
+        circle_marker_f249fc3ccfca7c3ad893eb8884202055.bindPopup(popup_57210e1fc35079343da34daa0af16e2e)
+        ;
+
+        
+    
+    
+            var circle_marker_b404f25383bcaad6e5040c1199649c2f = L.circleMarker(
+                [64.544815, 40.54768],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_cea4964c3cd2058e07dfbbf05c2f4779 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00b927e1102855a14b1255d58cd427a8 = $(`<div id="html_00b927e1102855a14b1255d58cd427a8" style="width: 100.0%; height: 100.0%;"><b>2-комн., 50 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 600<br>Этаж: 5 из 9<br>Год постройки: 1975<br><a href='https://realty.yandex.ru/offer/3046012910447613440/' target='_blank'>Объявление</a></div>`)[0];
+                popup_cea4964c3cd2058e07dfbbf05c2f4779.setContent(html_00b927e1102855a14b1255d58cd427a8);
+            
+        
+
+        circle_marker_b404f25383bcaad6e5040c1199649c2f.bindPopup(popup_cea4964c3cd2058e07dfbbf05c2f4779)
+        ;
+
+        
+    
+    
+            var circle_marker_da676b8994b0ab9460430667b270cc0b = L.circleMarker(
+                [64.602806, 40.591705],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_aa7b810096d8e64e1ae82008c864c9a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2394b927904fae4f05149a594167e9a8 = $(`<div id="html_2394b927904fae4f05149a594167e9a8" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 625<br>Этаж: 8 из 9<br>Год постройки: 1991<br><a href='https://realty.yandex.ru/offer/3125989865507863040/' target='_blank'>Объявление</a></div>`)[0];
+                popup_aa7b810096d8e64e1ae82008c864c9a0.setContent(html_2394b927904fae4f05149a594167e9a8);
+            
+        
+
+        circle_marker_da676b8994b0ab9460430667b270cc0b.bindPopup(popup_aa7b810096d8e64e1ae82008c864c9a0)
+        ;
+
+        
+    
+    
+            var circle_marker_b0defc236e7b0af99a4ae088467994fe = L.circleMarker(
+                [64.54009, 40.52002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_83c79f7e1c423b9042df7600eae32b0c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f320695f5c72d4f112ea00ab04f7acaa = $(`<div id="html_f320695f5c72d4f112ea00ab04f7acaa" style="width: 100.0%; height: 100.0%;"><b>1-комн., 29 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 862<br>Этаж: 2 из 13<br>Год постройки: 1975<br><a href='https://realty.yandex.ru/offer/3286403788877835264/' target='_blank'>Объявление</a></div>`)[0];
+                popup_83c79f7e1c423b9042df7600eae32b0c.setContent(html_f320695f5c72d4f112ea00ab04f7acaa);
+            
+        
+
+        circle_marker_b0defc236e7b0af99a4ae088467994fe.bindPopup(popup_83c79f7e1c423b9042df7600eae32b0c)
+        ;
+
+        
+    
+    
+            var circle_marker_b33c7680f78bbb866a6c4d1f4e8dc4d7 = L.circleMarker(
+                [64.537186, 40.527935],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_c82f7ee468887a3f1d9fcaa79819b112 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e81520994455d35b836b02e4988da0e4 = $(`<div id="html_e81520994455d35b836b02e4988da0e4" style="width: 100.0%; height: 100.0%;"><b>2-комн., 60 м²</b><br>Цена: 40000 ₽/мес<br>Цена за м²: 667<br>Этаж: 9 из 9<br>Год постройки: 1996<br><a href='https://realty.yandex.ru/offer/33086112464605953/' target='_blank'>Объявление</a></div>`)[0];
+                popup_c82f7ee468887a3f1d9fcaa79819b112.setContent(html_e81520994455d35b836b02e4988da0e4);
+            
+        
+
+        circle_marker_b33c7680f78bbb866a6c4d1f4e8dc4d7.bindPopup(popup_c82f7ee468887a3f1d9fcaa79819b112)
+        ;
+
+        
+    
+    
+            var circle_marker_3e37c3d7c42e02b31900a26672891351 = L.circleMarker(
+                [64.53566, 40.545864],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_be5ee7ddfcd48b15e59b79ec07e5ea1c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3315d8ba4ce284f42c46e75d2ff78d7d = $(`<div id="html_3315d8ba4ce284f42c46e75d2ff78d7d" style="width: 100.0%; height: 100.0%;"><b>2-комн., 55 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 400<br>Этаж: 2 из 2<br>Год постройки: 1937<br><a href='https://realty.yandex.ru/offer/331550329065787393/' target='_blank'>Объявление</a></div>`)[0];
+                popup_be5ee7ddfcd48b15e59b79ec07e5ea1c.setContent(html_3315d8ba4ce284f42c46e75d2ff78d7d);
+            
+        
+
+        circle_marker_3e37c3d7c42e02b31900a26672891351.bindPopup(popup_be5ee7ddfcd48b15e59b79ec07e5ea1c)
+        ;
+
+        
+    
+    
+            var circle_marker_6f29c0beae03b68bf604a4a9e8565e05 = L.circleMarker(
+                [64.54532, 40.552685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_cdc4d2e27340265e2b44de1b78ae73a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1554bccf1d1f7ddcdeaa20915a84b94c = $(`<div id="html_1554bccf1d1f7ddcdeaa20915a84b94c" style="width: 100.0%; height: 100.0%;"><b>1-комн., 31 м²</b><br>Цена: 19000 ₽/мес<br>Цена за м²: 613<br>Этаж: 2 из 5<br>Год постройки: 1963<br><a href='https://realty.yandex.ru/offer/344208297930076726/' target='_blank'>Объявление</a></div>`)[0];
+                popup_cdc4d2e27340265e2b44de1b78ae73a7.setContent(html_1554bccf1d1f7ddcdeaa20915a84b94c);
+            
+        
+
+        circle_marker_6f29c0beae03b68bf604a4a9e8565e05.bindPopup(popup_cdc4d2e27340265e2b44de1b78ae73a7)
+        ;
+
+        
+    
+    
+            var circle_marker_5b784e5c52e3e4adf63530c67327aa8b = L.circleMarker(
+                [64.560165, 40.524467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_240af91410443bb8e310d5d112db9201 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_217a59d71fe0ac009a20bfc55f49c3de = $(`<div id="html_217a59d71fe0ac009a20bfc55f49c3de" style="width: 100.0%; height: 100.0%;"><b>1-комн., 53 м²</b><br>Цена: 63120 ₽/мес<br>Цена за м²: 1200<br>Этаж: 7 из 8<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/344208542967925781/' target='_blank'>Объявление</a></div>`)[0];
+                popup_240af91410443bb8e310d5d112db9201.setContent(html_217a59d71fe0ac009a20bfc55f49c3de);
+            
+        
+
+        circle_marker_5b784e5c52e3e4adf63530c67327aa8b.bindPopup(popup_240af91410443bb8e310d5d112db9201)
+        ;
+
+        
+    
+    
+            var circle_marker_4a4a9b39445854b580b4a955eba27d85 = L.circleMarker(
+                [64.54521, 40.524933],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_9f1c49323a5191608a58ebc53e82072a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8837813e5976cf56efa8dc6f0886cefc = $(`<div id="html_8837813e5976cf56efa8dc6f0886cefc" style="width: 100.0%; height: 100.0%;"><b>2-комн., 52 м²</b><br>Цена: 34000 ₽/мес<br>Цена за м²: 654<br>Этаж: 8 из 9<br>Год постройки: 1985<br><a href='https://realty.yandex.ru/offer/3512720941107195392/' target='_blank'>Объявление</a></div>`)[0];
+                popup_9f1c49323a5191608a58ebc53e82072a.setContent(html_8837813e5976cf56efa8dc6f0886cefc);
+            
+        
+
+        circle_marker_4a4a9b39445854b580b4a955eba27d85.bindPopup(popup_9f1c49323a5191608a58ebc53e82072a)
+        ;
+
+        
+    
+    
+            var circle_marker_ac717a71ff0127856dd1c3aa8d459373 = L.circleMarker(
+                [64.54517, 40.56189],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_27973aec13b89b5fe53cb014aa4af0c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bd753390ae58e5d606bffd8228265ee5 = $(`<div id="html_bd753390ae58e5d606bffd8228265ee5" style="width: 100.0%; height: 100.0%;"><b>1-комн., 25 м²</b><br>Цена: 21000 ₽/мес<br>Цена за м²: 840<br>Этаж: 3 из 9<br>Год постройки: 1975<br><a href='https://realty.yandex.ru/offer/3834151351035779072/' target='_blank'>Объявление</a></div>`)[0];
+                popup_27973aec13b89b5fe53cb014aa4af0c6.setContent(html_bd753390ae58e5d606bffd8228265ee5);
+            
+        
+
+        circle_marker_ac717a71ff0127856dd1c3aa8d459373.bindPopup(popup_27973aec13b89b5fe53cb014aa4af0c6)
+        ;
+
+        
+    
+    
+            var circle_marker_1cc96d183d83e7598f08ad5f32d4d186 = L.circleMarker(
+                [64.53255, 40.57895],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_0e7b5fa0c894071119c66a4b2a2bf4de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b53e457673a96c8aec08522166de2ee = $(`<div id="html_1b53e457673a96c8aec08522166de2ee" style="width: 100.0%; height: 100.0%;"><b>2-комн., 51 м²</b><br>Цена: 29000 ₽/мес<br>Цена за м²: 569<br>Этаж: 8 из 9<br>Год постройки: 1987<br><a href='https://realty.yandex.ru/offer/4292531668774772306/' target='_blank'>Объявление</a></div>`)[0];
+                popup_0e7b5fa0c894071119c66a4b2a2bf4de.setContent(html_1b53e457673a96c8aec08522166de2ee);
+            
+        
+
+        circle_marker_1cc96d183d83e7598f08ad5f32d4d186.bindPopup(popup_0e7b5fa0c894071119c66a4b2a2bf4de)
+        ;
+
+        
+    
+    
+            var circle_marker_aee31543ab2d3f167d959281bb981634 = L.circleMarker(
+                [64.541336, 40.538635],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_3557255527f7c1385865e73dea35865e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_625839706a4d3585e1163227fd3b2c3e = $(`<div id="html_625839706a4d3585e1163227fd3b2c3e" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 38000 ₽/мес<br>Цена за м²: 1188<br>Этаж: 6 из 16<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/4292531668781215843/' target='_blank'>Объявление</a></div>`)[0];
+                popup_3557255527f7c1385865e73dea35865e.setContent(html_625839706a4d3585e1163227fd3b2c3e);
+            
+        
+
+        circle_marker_aee31543ab2d3f167d959281bb981634.bindPopup(popup_3557255527f7c1385865e73dea35865e)
+        ;
+
+        
+    
+    
+            var circle_marker_4707200ffc432eba8cec5560bd7b4616 = L.circleMarker(
+                [64.54297, 40.576714],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_dc9726674231ef0a15f622a7ed98ad0d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9b4ffbb6303a4d2d915c31e8192f62a1 = $(`<div id="html_9b4ffbb6303a4d2d915c31e8192f62a1" style="width: 100.0%; height: 100.0%;"><b>2-комн., 51 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 588<br>Этаж: 4 из 9<br>Год постройки: 1980<br><a href='https://realty.yandex.ru/offer/4306422264291073537/' target='_blank'>Объявление</a></div>`)[0];
+                popup_dc9726674231ef0a15f622a7ed98ad0d.setContent(html_9b4ffbb6303a4d2d915c31e8192f62a1);
+            
+        
+
+        circle_marker_4707200ffc432eba8cec5560bd7b4616.bindPopup(popup_dc9726674231ef0a15f622a7ed98ad0d)
+        ;
+
+        
+    
+    
+            var circle_marker_5a2f9936cfadec413e90c4cbe1782568 = L.circleMarker(
+                [64.54517, 40.56189],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_4fd63f0c96cd8f77f9f08d9039a22eb0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_949ad77deba357e1ea0459857138167e = $(`<div id="html_949ad77deba357e1ea0459857138167e" style="width: 100.0%; height: 100.0%;"><b>1-комн., 26 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 769<br>Этаж: 5 из 9<br>Год постройки: 1975<br><a href='https://realty.yandex.ru/offer/4367138741608281088/' target='_blank'>Объявление</a></div>`)[0];
+                popup_4fd63f0c96cd8f77f9f08d9039a22eb0.setContent(html_949ad77deba357e1ea0459857138167e);
+            
+        
+
+        circle_marker_5a2f9936cfadec413e90c4cbe1782568.bindPopup(popup_4fd63f0c96cd8f77f9f08d9039a22eb0)
+        ;
+
+        
+    
+    
+            var circle_marker_cb24e9354c8598572ea9be777ffd02fe = L.circleMarker(
+                [64.537895, 40.544426],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_3f0e9e4897f7e1fd340a37a6687900e5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68c67080689913743addc7124947db2a = $(`<div id="html_68c67080689913743addc7124947db2a" style="width: 100.0%; height: 100.0%;"><b>1-комн., 41 м²</b><br>Цена: 18000 ₽/мес<br>Цена за м²: 439<br>Этаж: 2 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/4402698969924771329/' target='_blank'>Объявление</a></div>`)[0];
+                popup_3f0e9e4897f7e1fd340a37a6687900e5.setContent(html_68c67080689913743addc7124947db2a);
+            
+        
+
+        circle_marker_cb24e9354c8598572ea9be777ffd02fe.bindPopup(popup_3f0e9e4897f7e1fd340a37a6687900e5)
+        ;
+
+        
+    
+    
+            var circle_marker_5d0fd1a8186991e509fc2e157bef572d = L.circleMarker(
+                [64.54461, 40.552925],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_0197e5dbff8f4e09f91289dd8ca98709 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c597b875dd41ec08f5bc65652fa071d4 = $(`<div id="html_c597b875dd41ec08f5bc65652fa071d4" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 12000 ₽/мес<br>Цена за м²: 375<br>Этаж: 1 из 2<br>Год постройки: 1960<br><a href='https://realty.yandex.ru/offer/4460164609074310400/' target='_blank'>Объявление</a></div>`)[0];
+                popup_0197e5dbff8f4e09f91289dd8ca98709.setContent(html_c597b875dd41ec08f5bc65652fa071d4);
+            
+        
+
+        circle_marker_5d0fd1a8186991e509fc2e157bef572d.bindPopup(popup_0197e5dbff8f4e09f91289dd8ca98709)
+        ;
+
+        
+    
+    
+            var circle_marker_a61c6c96d6f6797f4d225d5051410045 = L.circleMarker(
+                [64.51831, 40.666267],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_45cfb8e4fe1b2f71e4cef6f9e8eb81c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12bbb45ddc0186b97ce5092d8e5f342d = $(`<div id="html_12bbb45ddc0186b97ce5092d8e5f342d" style="width: 100.0%; height: 100.0%;"><b>1-комн., 31 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 645<br>Этаж: 7 из 9<br>Год постройки: 2006<br><a href='https://realty.yandex.ru/offer/4490543279880049920/' target='_blank'>Объявление</a></div>`)[0];
+                popup_45cfb8e4fe1b2f71e4cef6f9e8eb81c4.setContent(html_12bbb45ddc0186b97ce5092d8e5f342d);
+            
+        
+
+        circle_marker_a61c6c96d6f6797f4d225d5051410045.bindPopup(popup_45cfb8e4fe1b2f71e4cef6f9e8eb81c4)
+        ;
+
+        
+    
+    
+            var circle_marker_f0c3a735247d90bc99c0a7b5e20f3b1e = L.circleMarker(
+                [64.54207, 40.547085],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_bfe6b576f8a60af93dd96b71c9b2f7ea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d31a608c2cd72bdfcf97f7b24edd744 = $(`<div id="html_4d31a608c2cd72bdfcf97f7b24edd744" style="width: 100.0%; height: 100.0%;"><b>3-комн., 55 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 509<br>Этаж: 5 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/4523230186131057664/' target='_blank'>Объявление</a></div>`)[0];
+                popup_bfe6b576f8a60af93dd96b71c9b2f7ea.setContent(html_4d31a608c2cd72bdfcf97f7b24edd744);
+            
+        
+
+        circle_marker_f0c3a735247d90bc99c0a7b5e20f3b1e.bindPopup(popup_bfe6b576f8a60af93dd96b71c9b2f7ea)
+        ;
+
+        
+    
+    
+            var circle_marker_2721a9ffa1e7a0984895da78b17fe1ef = L.circleMarker(
+                [64.54185, 40.541183],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_bcc967674717a4f86e039694639e8b2f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f935508e8f6aacd6abe3038b3c8a83b0 = $(`<div id="html_f935508e8f6aacd6abe3038b3c8a83b0" style="width: 100.0%; height: 100.0%;"><b>2-комн., 44 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 568<br>Этаж: 4 из 5<br>Год постройки: 1968<br><a href='https://realty.yandex.ru/offer/4600943653075493632/' target='_blank'>Объявление</a></div>`)[0];
+                popup_bcc967674717a4f86e039694639e8b2f.setContent(html_f935508e8f6aacd6abe3038b3c8a83b0);
+            
+        
+
+        circle_marker_2721a9ffa1e7a0984895da78b17fe1ef.bindPopup(popup_bcc967674717a4f86e039694639e8b2f)
+        ;
+
+        
+    
+    
+            var circle_marker_043bab10aab11ea4435c7f8d913cbb34 = L.circleMarker(
+                [64.580505, 40.50755],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_0850ce9a50c2ef6657859540ca89cc68 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7df1738a54f523bb697865b5a1dcb490 = $(`<div id="html_7df1738a54f523bb697865b5a1dcb490" style="width: 100.0%; height: 100.0%;"><b>1-комн., 31 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 710<br>Этаж: 4 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/4662799988273886976/' target='_blank'>Объявление</a></div>`)[0];
+                popup_0850ce9a50c2ef6657859540ca89cc68.setContent(html_7df1738a54f523bb697865b5a1dcb490);
+            
+        
+
+        circle_marker_043bab10aab11ea4435c7f8d913cbb34.bindPopup(popup_0850ce9a50c2ef6657859540ca89cc68)
+        ;
+
+        
+    
+    
+            var circle_marker_b8a4ad3c4ad2bb886b67f7087a75cfaa = L.circleMarker(
+                [64.54517, 40.56189],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_4bd944c747a24659cd0e99be959877eb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e5a66c2a5e534f87d59504d77215f3fa = $(`<div id="html_e5a66c2a5e534f87d59504d77215f3fa" style="width: 100.0%; height: 100.0%;"><b>1-комн., 25 м²</b><br>Цена: 21000 ₽/мес<br>Цена за м²: 840<br>Этаж: 2 из 9<br>Год постройки: 1975<br><a href='https://realty.yandex.ru/offer/5048478406133452288/' target='_blank'>Объявление</a></div>`)[0];
+                popup_4bd944c747a24659cd0e99be959877eb.setContent(html_e5a66c2a5e534f87d59504d77215f3fa);
+            
+        
+
+        circle_marker_b8a4ad3c4ad2bb886b67f7087a75cfaa.bindPopup(popup_4bd944c747a24659cd0e99be959877eb)
+        ;
+
+        
+    
+    
+            var circle_marker_9c382b90d54c2c3f89fd109c3e23cec4 = L.circleMarker(
+                [64.52576, 40.611324],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_c557e17b1e057faa9366b2436291909e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_445ba00d0b18e671893dab9f359d4ff9 = $(`<div id="html_445ba00d0b18e671893dab9f359d4ff9" style="width: 100.0%; height: 100.0%;"><b>1-комн., 31 м²</b><br>Цена: 26000 ₽/мес<br>Цена за м²: 839<br>Этаж: 5 из 9<br>Год постройки: 1977<br><a href='https://realty.yandex.ru/offer/5101274822147350272/' target='_blank'>Объявление</a></div>`)[0];
+                popup_c557e17b1e057faa9366b2436291909e.setContent(html_445ba00d0b18e671893dab9f359d4ff9);
+            
+        
+
+        circle_marker_9c382b90d54c2c3f89fd109c3e23cec4.bindPopup(popup_c557e17b1e057faa9366b2436291909e)
+        ;
+
+        
+    
+    
+            var circle_marker_e819c0228b0b36e7ebae94e77e5da80c = L.circleMarker(
+                [64.535866, 40.616238],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_8267967228d57d2a8e8c074a1f2744cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f52841bc9ecd882baa8fffaad3632cf1 = $(`<div id="html_f52841bc9ecd882baa8fffaad3632cf1" style="width: 100.0%; height: 100.0%;"><b>1-комн., 33 м²</b><br>Цена: 24000 ₽/мес<br>Цена за м²: 727<br>Этаж: 3 из 13<br>Год постройки: 2013<br><a href='https://realty.yandex.ru/offer/5201388711325278430/' target='_blank'>Объявление</a></div>`)[0];
+                popup_8267967228d57d2a8e8c074a1f2744cc.setContent(html_f52841bc9ecd882baa8fffaad3632cf1);
+            
+        
+
+        circle_marker_e819c0228b0b36e7ebae94e77e5da80c.bindPopup(popup_8267967228d57d2a8e8c074a1f2744cc)
+        ;
+
+        
+    
+    
+            var circle_marker_914e8280532b1803e406d49e7c0b5f12 = L.circleMarker(
+                [64.53246, 40.622616],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_e4f5ebdc5b0ff937aef934b02be4dbf8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_947ee70442e2de23ad5761f6618c8f43 = $(`<div id="html_947ee70442e2de23ad5761f6618c8f43" style="width: 100.0%; height: 100.0%;"><b>3-комн., 63 м²</b><br>Цена: 40000 ₽/мес<br>Цена за м²: 635<br>Этаж: 5 из 9<br>Год постройки: 2007<br><a href='https://realty.yandex.ru/offer/5201388711326044314/' target='_blank'>Объявление</a></div>`)[0];
+                popup_e4f5ebdc5b0ff937aef934b02be4dbf8.setContent(html_947ee70442e2de23ad5761f6618c8f43);
+            
+        
+
+        circle_marker_914e8280532b1803e406d49e7c0b5f12.bindPopup(popup_e4f5ebdc5b0ff937aef934b02be4dbf8)
+        ;
+
+        
+    
+    
+            var circle_marker_64ed254a12d4dfec3d599dc77c0684d2 = L.circleMarker(
+                [64.54768, 40.53277],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_2feaf721d61491f8e611d6aa2b938b58 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aa24d05c2c0651f2b33722cdbdf5abfb = $(`<div id="html_aa24d05c2c0651f2b33722cdbdf5abfb" style="width: 100.0%; height: 100.0%;"><b>3-комн., 60 м²</b><br>Цена: 40000 ₽/мес<br>Цена за м²: 667<br>Этаж: 5 из 5<br>Год постройки: 1980<br><a href='https://realty.yandex.ru/offer/5201388711326052808/' target='_blank'>Объявление</a></div>`)[0];
+                popup_2feaf721d61491f8e611d6aa2b938b58.setContent(html_aa24d05c2c0651f2b33722cdbdf5abfb);
+            
+        
+
+        circle_marker_64ed254a12d4dfec3d599dc77c0684d2.bindPopup(popup_2feaf721d61491f8e611d6aa2b938b58)
+        ;
+
+        
+    
+    
+            var circle_marker_564edf55bcecd6f585f12a58273c7b39 = L.circleMarker(
+                [64.54426, 40.573135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_683778ff8395ae2ca3c9e6bae67c23da = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc049f50964fe3bee05ad5d01bd33be1 = $(`<div id="html_cc049f50964fe3bee05ad5d01bd33be1" style="width: 100.0%; height: 100.0%;"><b>2-комн., 44 м²</b><br>Цена: 35000 ₽/мес<br>Цена за м²: 796<br>Этаж: 1 из 13<br>Год постройки: 1982<br><a href='https://realty.yandex.ru/offer/5227673131342288809/' target='_blank'>Объявление</a></div>`)[0];
+                popup_683778ff8395ae2ca3c9e6bae67c23da.setContent(html_cc049f50964fe3bee05ad5d01bd33be1);
+            
+        
+
+        circle_marker_564edf55bcecd6f585f12a58273c7b39.bindPopup(popup_683778ff8395ae2ca3c9e6bae67c23da)
+        ;
+
+        
+    
+    
+            var circle_marker_0e4a6ecc3ab97c37ea21b119cdde3204 = L.circleMarker(
+                [64.54871, 40.5222],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1f86e122260e5eda99f13e94f7f29b7d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_048afe32a2fd434c08b638d956cf508d = $(`<div id="html_048afe32a2fd434c08b638d956cf508d" style="width: 100.0%; height: 100.0%;"><b>3-комн., 59 м²</b><br>Цена: 35000 ₽/мес<br>Цена за м²: 593<br>Этаж: 2 из 5<br>Год постройки: 1964<br><a href='https://realty.yandex.ru/offer/5227699575340188043/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1f86e122260e5eda99f13e94f7f29b7d.setContent(html_048afe32a2fd434c08b638d956cf508d);
+            
+        
+
+        circle_marker_0e4a6ecc3ab97c37ea21b119cdde3204.bindPopup(popup_1f86e122260e5eda99f13e94f7f29b7d)
+        ;
+
+        
+    
+    
+            var circle_marker_b59080a7dc94456ce60f5b1f3a5c00f3 = L.circleMarker(
+                [64.55092, 40.548992],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_97a6acfb3a7a3296038023b050c1aa55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11ad5640d23b5a6354f8d9cb02ac5b80 = $(`<div id="html_11ad5640d23b5a6354f8d9cb02ac5b80" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 875<br>Этаж: 7 из 8<br>Год постройки: 2020<br><a href='https://realty.yandex.ru/offer/5386277049740195072/' target='_blank'>Объявление</a></div>`)[0];
+                popup_97a6acfb3a7a3296038023b050c1aa55.setContent(html_11ad5640d23b5a6354f8d9cb02ac5b80);
+            
+        
+
+        circle_marker_b59080a7dc94456ce60f5b1f3a5c00f3.bindPopup(popup_97a6acfb3a7a3296038023b050c1aa55)
+        ;
+
+        
+    
+    
+            var circle_marker_2d291039271411d5fa9bf02e2cff1a1c = L.circleMarker(
+                [64.53142, 40.628296],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_db0aa14dcc408f7c43b7adabf5f1537c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_54341bd308c565265dd102d0f450c02d = $(`<div id="html_54341bd308c565265dd102d0f450c02d" style="width: 100.0%; height: 100.0%;"><b>1-комн., 33 м²</b><br>Цена: 26000 ₽/мес<br>Цена за м²: 788<br>Этаж: 1 из 9<br>Год постройки: 2017<br><a href='https://realty.yandex.ru/offer/5555185781400921739/' target='_blank'>Объявление</a></div>`)[0];
+                popup_db0aa14dcc408f7c43b7adabf5f1537c.setContent(html_54341bd308c565265dd102d0f450c02d);
+            
+        
+
+        circle_marker_2d291039271411d5fa9bf02e2cff1a1c.bindPopup(popup_db0aa14dcc408f7c43b7adabf5f1537c)
+        ;
+
+        
+    
+    
+            var circle_marker_6d5ffc940c46509222f1007186c88e65 = L.circleMarker(
+                [64.58304, 40.52],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_eb397cf6f1a46e2fe5da58b25365cecf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea2f4e5f3c9b3b77631fe3ecdeed7b57 = $(`<div id="html_ea2f4e5f3c9b3b77631fe3ecdeed7b57" style="width: 100.0%; height: 100.0%;"><b>2-комн., 50 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 500<br>Этаж: 5 из 9<br>Год постройки: 1982<br><a href='https://realty.yandex.ru/offer/5555185815124095531/' target='_blank'>Объявление</a></div>`)[0];
+                popup_eb397cf6f1a46e2fe5da58b25365cecf.setContent(html_ea2f4e5f3c9b3b77631fe3ecdeed7b57);
+            
+        
+
+        circle_marker_6d5ffc940c46509222f1007186c88e65.bindPopup(popup_eb397cf6f1a46e2fe5da58b25365cecf)
+        ;
+
+        
+    
+    
+            var circle_marker_9ca4509083e0c796ddfaba700c475ab5 = L.circleMarker(
+                [64.584496, 40.50847],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_dfbec1e7649ce15a8e45de9918c6c355 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a928e3ecc38b7fb51e582d89a036fb10 = $(`<div id="html_a928e3ecc38b7fb51e582d89a036fb10" style="width: 100.0%; height: 100.0%;"><b>2-комн., 45 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 444<br>Этаж: 3 из 9<br>Год постройки: 1990<br><a href='https://realty.yandex.ru/offer/5555185838402578091/' target='_blank'>Объявление</a></div>`)[0];
+                popup_dfbec1e7649ce15a8e45de9918c6c355.setContent(html_a928e3ecc38b7fb51e582d89a036fb10);
+            
+        
+
+        circle_marker_9ca4509083e0c796ddfaba700c475ab5.bindPopup(popup_dfbec1e7649ce15a8e45de9918c6c355)
+        ;
+
+        
+    
+    
+            var circle_marker_75e6ad721c919fe5924c5d2b3f51b457 = L.circleMarker(
+                [64.55683, 40.518913],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_db3502ccaba1e906df640a780fa4ed9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_802c40c0e5cdf54038794a17bbd87f6d = $(`<div id="html_802c40c0e5cdf54038794a17bbd87f6d" style="width: 100.0%; height: 100.0%;"><b>0-комн., 23 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 1174<br>Этаж: 1 из 4<br>Год постройки: 2022<br><a href='https://realty.yandex.ru/offer/5555185844446840380/' target='_blank'>Объявление</a></div>`)[0];
+                popup_db3502ccaba1e906df640a780fa4ed9a.setContent(html_802c40c0e5cdf54038794a17bbd87f6d);
+            
+        
+
+        circle_marker_75e6ad721c919fe5924c5d2b3f51b457.bindPopup(popup_db3502ccaba1e906df640a780fa4ed9a)
+        ;
+
+        
+    
+    
+            var circle_marker_48fb200b7e58849256750f892545aab1 = L.circleMarker(
+                [64.53777, 40.52667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_d045d251898401d75e07579a0be98531 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5fcef149908b2f5a95908e65ae50012c = $(`<div id="html_5fcef149908b2f5a95908e65ae50012c" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 781<br>Этаж: 7 из 9<br>Год постройки: 1990<br><a href='https://realty.yandex.ru/offer/5555185864082862090/' target='_blank'>Объявление</a></div>`)[0];
+                popup_d045d251898401d75e07579a0be98531.setContent(html_5fcef149908b2f5a95908e65ae50012c);
+            
+        
+
+        circle_marker_48fb200b7e58849256750f892545aab1.bindPopup(popup_d045d251898401d75e07579a0be98531)
+        ;
+
+        
+    
+    
+            var circle_marker_12d68f97e91442e93fc0c6d56630d9ec = L.circleMarker(
+                [64.53287, 40.533047],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_563f3789aa0b01c9cc95da25c5360b6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_42766c09fbb38b6df1cd1a17bcecaacf = $(`<div id="html_42766c09fbb38b6df1cd1a17bcecaacf" style="width: 100.0%; height: 100.0%;"><b>2-комн., 41 м²</b><br>Цена: 37000 ₽/мес<br>Цена за м²: 902<br>Этаж: 2 из 4<br>Год постройки: 2020<br><a href='https://realty.yandex.ru/offer/5555185867521132753/' target='_blank'>Объявление</a></div>`)[0];
+                popup_563f3789aa0b01c9cc95da25c5360b6d.setContent(html_42766c09fbb38b6df1cd1a17bcecaacf);
+            
+        
+
+        circle_marker_12d68f97e91442e93fc0c6d56630d9ec.bindPopup(popup_563f3789aa0b01c9cc95da25c5360b6d)
+        ;
+
+        
+    
+    
+            var circle_marker_4934e0b49cfd1be975d321e44a6080ea = L.circleMarker(
+                [64.54786, 40.565575],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_c5fdeb405ed1cba55cfbb8462e3cb24c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0bf4a7d5ea486203dad184bff600cf90 = $(`<div id="html_0bf4a7d5ea486203dad184bff600cf90" style="width: 100.0%; height: 100.0%;"><b>1-комн., 25 м²</b><br>Цена: 23000 ₽/мес<br>Цена за м²: 920<br>Этаж: 3 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/5555185894174808068/' target='_blank'>Объявление</a></div>`)[0];
+                popup_c5fdeb405ed1cba55cfbb8462e3cb24c.setContent(html_0bf4a7d5ea486203dad184bff600cf90);
+            
+        
+
+        circle_marker_4934e0b49cfd1be975d321e44a6080ea.bindPopup(popup_c5fdeb405ed1cba55cfbb8462e3cb24c)
+        ;
+
+        
+    
+    
+            var circle_marker_86a3aa52da2658ad76e775177c3fbc37 = L.circleMarker(
+                [64.56135, 40.530502],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f548a7443107c70ec05bb5afe90e8d30 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aaef9a0e1e368f5644bfb9d00232e509 = $(`<div id="html_aaef9a0e1e368f5644bfb9d00232e509" style="width: 100.0%; height: 100.0%;"><b>2-комн., 42 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 667<br>Этаж: 5 из 5<br>Год постройки: 1965<br><a href='https://realty.yandex.ru/offer/5555185897833804875/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f548a7443107c70ec05bb5afe90e8d30.setContent(html_aaef9a0e1e368f5644bfb9d00232e509);
+            
+        
+
+        circle_marker_86a3aa52da2658ad76e775177c3fbc37.bindPopup(popup_f548a7443107c70ec05bb5afe90e8d30)
+        ;
+
+        
+    
+    
+            var circle_marker_8ddb89e78857bb065d31a3c905fd874c = L.circleMarker(
+                [64.585915, 40.523342],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_69ac27dae7916fefcefa6435a78198a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e270a236365fc089e476b322be38f708 = $(`<div id="html_e270a236365fc089e476b322be38f708" style="width: 100.0%; height: 100.0%;"><b>2-комн., 40 м²</b><br>Цена: 12000 ₽/мес<br>Цена за м²: 300<br>Этаж: 2 из 2<br>Год постройки: 1961<br><a href='https://realty.yandex.ru/offer/5555185924322352338/' target='_blank'>Объявление</a></div>`)[0];
+                popup_69ac27dae7916fefcefa6435a78198a6.setContent(html_e270a236365fc089e476b322be38f708);
+            
+        
+
+        circle_marker_8ddb89e78857bb065d31a3c905fd874c.bindPopup(popup_69ac27dae7916fefcefa6435a78198a6)
+        ;
+
+        
+    
+    
+            var circle_marker_1cdd320d6c8f59c3bbe7ebd326561bc9 = L.circleMarker(
+                [64.53529, 40.543762],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7b817000a7a5ee0dd7e189cd1007203e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e70e2f8a52c9cea58e6e4749769eb53b = $(`<div id="html_e70e2f8a52c9cea58e6e4749769eb53b" style="width: 100.0%; height: 100.0%;"><b>1-комн., 40 м²</b><br>Цена: 26000 ₽/мес<br>Цена за м²: 650<br>Этаж: 7 из 9<br>Год постройки: 1988<br><a href='https://realty.yandex.ru/offer/5717695870827355392/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7b817000a7a5ee0dd7e189cd1007203e.setContent(html_e70e2f8a52c9cea58e6e4749769eb53b);
+            
+        
+
+        circle_marker_1cdd320d6c8f59c3bbe7ebd326561bc9.bindPopup(popup_7b817000a7a5ee0dd7e189cd1007203e)
+        ;
+
+        
+    
+    
+            var circle_marker_61c371a2402d4cc679d65007fc144258 = L.circleMarker(
+                [64.58304, 40.52],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_6a46637626657cc2676e8f472c40e4bc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8875d847880513a2a790a2a63e8bc053 = $(`<div id="html_8875d847880513a2a790a2a63e8bc053" style="width: 100.0%; height: 100.0%;"><b>1-комн., 33 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 667<br>Этаж: 1 из 9<br>Год постройки: 1982<br><a href='https://realty.yandex.ru/offer/5828209803710916608/' target='_blank'>Объявление</a></div>`)[0];
+                popup_6a46637626657cc2676e8f472c40e4bc.setContent(html_8875d847880513a2a790a2a63e8bc053);
+            
+        
+
+        circle_marker_61c371a2402d4cc679d65007fc144258.bindPopup(popup_6a46637626657cc2676e8f472c40e4bc)
+        ;
+
+        
+    
+    
+            var circle_marker_f1c96153fcb66ae4edfc2fac41bba4ee = L.circleMarker(
+                [64.52726, 40.61021],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_359f76802c7aae4cb6d4fae2f5b12c46 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d949f232d0a8a05a99d0e0296e946716 = $(`<div id="html_d949f232d0a8a05a99d0e0296e946716" style="width: 100.0%; height: 100.0%;"><b>2-комн., 50 м²</b><br>Цена: 35000 ₽/мес<br>Цена за м²: 700<br>Этаж: 3 из 9<br>Год постройки: 1984<br><a href='https://realty.yandex.ru/offer/6022811438374338817/' target='_blank'>Объявление</a></div>`)[0];
+                popup_359f76802c7aae4cb6d4fae2f5b12c46.setContent(html_d949f232d0a8a05a99d0e0296e946716);
+            
+        
+
+        circle_marker_f1c96153fcb66ae4edfc2fac41bba4ee.bindPopup(popup_359f76802c7aae4cb6d4fae2f5b12c46)
+        ;
+
+        
+    
+    
+            var circle_marker_20f7862554619725d08c752d5a20d5d0 = L.circleMarker(
+                [64.54164, 40.537846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_e7bf3c6f3625213097d391db98794f08 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_10a394e56c4c587863ee51540dc76acb = $(`<div id="html_10a394e56c4c587863ee51540dc76acb" style="width: 100.0%; height: 100.0%;"><b>0-комн., 25 м²</b><br>Цена: 32000 ₽/мес<br>Цена за м²: 1296<br>Этаж: 12 из 16<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/6039422887876125405/' target='_blank'>Объявление</a></div>`)[0];
+                popup_e7bf3c6f3625213097d391db98794f08.setContent(html_10a394e56c4c587863ee51540dc76acb);
+            
+        
+
+        circle_marker_20f7862554619725d08c752d5a20d5d0.bindPopup(popup_e7bf3c6f3625213097d391db98794f08)
+        ;
+
+        
+    
+    
+            var circle_marker_c8b1cb40cf0444089372cd296fcec4a7 = L.circleMarker(
+                [64.55489, 40.558968],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1b952defe5880002e7feb2fa94dc6620 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f1a39b85691b89a207f5336bd67f4b52 = $(`<div id="html_f1a39b85691b89a207f5336bd67f4b52" style="width: 100.0%; height: 100.0%;"><b>0-комн., 25 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 1000<br>Этаж: 3 из 16<br>Год постройки: 2024<br><a href='https://realty.yandex.ru/offer/6039422887933348987/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1b952defe5880002e7feb2fa94dc6620.setContent(html_f1a39b85691b89a207f5336bd67f4b52);
+            
+        
+
+        circle_marker_c8b1cb40cf0444089372cd296fcec4a7.bindPopup(popup_1b952defe5880002e7feb2fa94dc6620)
+        ;
+
+        
+    
+    
+            var circle_marker_443e4c822878d0179604537cee482ee1 = L.circleMarker(
+                [64.54009, 40.52002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_cb52b5def3d6de34612bf21d1c6c82db = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f46ddd11b36fcc62aa53c5eeccc53fa = $(`<div id="html_9f46ddd11b36fcc62aa53c5eeccc53fa" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 862<br>Этаж: 5 из 12<br>Год постройки: 1974<br><a href='https://realty.yandex.ru/offer/6039422889791383989/' target='_blank'>Объявление</a></div>`)[0];
+                popup_cb52b5def3d6de34612bf21d1c6c82db.setContent(html_9f46ddd11b36fcc62aa53c5eeccc53fa);
+            
+        
+
+        circle_marker_443e4c822878d0179604537cee482ee1.bindPopup(popup_cb52b5def3d6de34612bf21d1c6c82db)
+        ;
+
+        
+    
+    
+            var circle_marker_2c418eccea1134b41c834304c37e91d6 = L.circleMarker(
+                [64.560165, 40.524467],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f8edc85d5e55ff5ded3acb22537e239e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_58efb3e6588c86bd28dbeeb62394d2e4 = $(`<div id="html_58efb3e6588c86bd28dbeeb62394d2e4" style="width: 100.0%; height: 100.0%;"><b>1-комн., 34 м²</b><br>Цена: 32000 ₽/мес<br>Цена за м²: 933<br>Этаж: 5 из 8<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/6041009264293202859/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f8edc85d5e55ff5ded3acb22537e239e.setContent(html_58efb3e6588c86bd28dbeeb62394d2e4);
+            
+        
+
+        circle_marker_2c418eccea1134b41c834304c37e91d6.bindPopup(popup_f8edc85d5e55ff5ded3acb22537e239e)
+        ;
+
+        
+    
+    
+            var circle_marker_ba984bc1baf36fbafca8d5033a0d97d8 = L.circleMarker(
+                [64.54295, 40.54097],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_6cfec81db097fdfc46df2b4d4f8e046b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b514aac3af2445dd8b71faf669d1a2b = $(`<div id="html_1b514aac3af2445dd8b71faf669d1a2b" style="width: 100.0%; height: 100.0%;"><b>2-комн., 50 м²</b><br>Цена: 50000 ₽/мес<br>Цена за м²: 992<br>Этаж: 1 из 14<br>Год постройки: 2023<br><a href='https://realty.yandex.ru/offer/6041009264294274616/' target='_blank'>Объявление</a></div>`)[0];
+                popup_6cfec81db097fdfc46df2b4d4f8e046b.setContent(html_1b514aac3af2445dd8b71faf669d1a2b);
+            
+        
+
+        circle_marker_ba984bc1baf36fbafca8d5033a0d97d8.bindPopup(popup_6cfec81db097fdfc46df2b4d4f8e046b)
+        ;
+
+        
+    
+    
+            var circle_marker_7e6485b2918e5bbe5c61d16b1148166a = L.circleMarker(
+                [64.5241, 40.613075],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_34f695e3c446feeab6b28e1f5171611f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c777c1fda204d74ffa726eecfc38c4bb = $(`<div id="html_c777c1fda204d74ffa726eecfc38c4bb" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 24000 ₽/мес<br>Цена за м²: 750<br>Этаж: 6 из 9<br>Год постройки: 1985<br><a href='https://realty.yandex.ru/offer/6041009264316173797/' target='_blank'>Объявление</a></div>`)[0];
+                popup_34f695e3c446feeab6b28e1f5171611f.setContent(html_c777c1fda204d74ffa726eecfc38c4bb);
+            
+        
+
+        circle_marker_7e6485b2918e5bbe5c61d16b1148166a.bindPopup(popup_34f695e3c446feeab6b28e1f5171611f)
+        ;
+
+        
+    
+    
+            var circle_marker_67f64ee89559609352e602a0504e8c50 = L.circleMarker(
+                [64.575325, 40.51516],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_337d8b2bceace0f22a0cad17682f9334 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_05ff604646cfdb5fccf43196eb6c0dbc = $(`<div id="html_05ff604646cfdb5fccf43196eb6c0dbc" style="width: 100.0%; height: 100.0%;"><b>2-комн., 42 м²</b><br>Цена: 32000 ₽/мес<br>Цена за м²: 756<br>Этаж: 4 из 9<br>Год постройки: 1984<br><a href='https://realty.yandex.ru/offer/6041009264322672020/' target='_blank'>Объявление</a></div>`)[0];
+                popup_337d8b2bceace0f22a0cad17682f9334.setContent(html_05ff604646cfdb5fccf43196eb6c0dbc);
+            
+        
+
+        circle_marker_67f64ee89559609352e602a0504e8c50.bindPopup(popup_337d8b2bceace0f22a0cad17682f9334)
+        ;
+
+        
+    
+    
+            var circle_marker_52ac3249cc9c54c7d54519eff17b597e = L.circleMarker(
+                [64.533134, 40.559204],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f7e62cccff6629ff1de301b911b9c137 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ba3a34ced58a1a0f7b6f606ab0c1869 = $(`<div id="html_1ba3a34ced58a1a0f7b6f606ab0c1869" style="width: 100.0%; height: 100.0%;"><b>4-комн., 84 м²</b><br>Цена: 47000 ₽/мес<br>Цена за м²: 562<br>Этаж: 2 из 4<br>Год постройки: 2006<br><a href='https://realty.yandex.ru/offer/6041009264429911861/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f7e62cccff6629ff1de301b911b9c137.setContent(html_1ba3a34ced58a1a0f7b6f606ab0c1869);
+            
+        
+
+        circle_marker_52ac3249cc9c54c7d54519eff17b597e.bindPopup(popup_f7e62cccff6629ff1de301b911b9c137)
+        ;
+
+        
+    
+    
+            var circle_marker_38872dbf1a1ebbd177c5bdf18ac4fa68 = L.circleMarker(
+                [64.55078, 40.570057],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1bc4a0b99d98fa0cfccc7d4bc21eec6e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0dcf3bbef2707914a29ea40e60800bd9 = $(`<div id="html_0dcf3bbef2707914a29ea40e60800bd9" style="width: 100.0%; height: 100.0%;"><b>1-комн., 35 м²</b><br>Цена: 23000 ₽/мес<br>Цена за м²: 659<br>Этаж: 2 из 9<br>Год постройки: 1977<br><a href='https://realty.yandex.ru/offer/6041009264487266488/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1bc4a0b99d98fa0cfccc7d4bc21eec6e.setContent(html_0dcf3bbef2707914a29ea40e60800bd9);
+            
+        
+
+        circle_marker_38872dbf1a1ebbd177c5bdf18ac4fa68.bindPopup(popup_1bc4a0b99d98fa0cfccc7d4bc21eec6e)
+        ;
+
+        
+    
+    
+            var circle_marker_ec0cfb335ebe6b96f4f0bc6b9cc98f32 = L.circleMarker(
+                [64.53514, 40.450195],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f90e7fad77da42461c0a31a7de39a42b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f11da8b632c53de9c0d9ff3f549c0bc = $(`<div id="html_3f11da8b632c53de9c0d9ff3f549c0bc" style="width: 100.0%; height: 100.0%;"><b>3-комн., 52 м²</b><br>Цена: 8000 ₽/мес<br>Цена за м²: 152<br>Этаж: 1 из 2<br>Год постройки: 1973<br><a href='https://realty.yandex.ru/offer/6041009265293260935/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f90e7fad77da42461c0a31a7de39a42b.setContent(html_3f11da8b632c53de9c0d9ff3f549c0bc);
+            
+        
+
+        circle_marker_ec0cfb335ebe6b96f4f0bc6b9cc98f32.bindPopup(popup_f90e7fad77da42461c0a31a7de39a42b)
+        ;
+
+        
+    
+    
+            var circle_marker_457acc87d335f5159ee3e43bea16af28 = L.circleMarker(
+                [64.543205, 40.539425],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_4a6f745a124eda0ff10d40540e0855d8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7e12dac50a66537a0da9709c45a4bd49 = $(`<div id="html_7e12dac50a66537a0da9709c45a4bd49" style="width: 100.0%; height: 100.0%;"><b>2-комн., 41 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 725<br>Этаж: 4 из 4<br>Год постройки: 1964<br><a href='https://realty.yandex.ru/offer/6041009265322815528/' target='_blank'>Объявление</a></div>`)[0];
+                popup_4a6f745a124eda0ff10d40540e0855d8.setContent(html_7e12dac50a66537a0da9709c45a4bd49);
+            
+        
+
+        circle_marker_457acc87d335f5159ee3e43bea16af28.bindPopup(popup_4a6f745a124eda0ff10d40540e0855d8)
+        ;
+
+        
+    
+    
+            var circle_marker_49e890697cf9721d7eea0e3f123ae225 = L.circleMarker(
+                [64.57077, 40.52675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_8326cc7f00de5e20f7057c6137cf7e89 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_41b28ddd4f028ff527d4d3287fa7e97e = $(`<div id="html_41b28ddd4f028ff527d4d3287fa7e97e" style="width: 100.0%; height: 100.0%;"><b>1-комн., 31 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 977<br>Этаж: 4 из 8<br>Год постройки: 2023<br><a href='https://realty.yandex.ru/offer/6041009265377419428/' target='_blank'>Объявление</a></div>`)[0];
+                popup_8326cc7f00de5e20f7057c6137cf7e89.setContent(html_41b28ddd4f028ff527d4d3287fa7e97e);
+            
+        
+
+        circle_marker_49e890697cf9721d7eea0e3f123ae225.bindPopup(popup_8326cc7f00de5e20f7057c6137cf7e89)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb0c47335c762bd9dd82ac744a4e81d = L.circleMarker(
+                [64.560165, 40.524467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_90a481318f12e90c76487046db9a62ac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23c6b330432f0defedf015a7021508c2 = $(`<div id="html_23c6b330432f0defedf015a7021508c2" style="width: 100.0%; height: 100.0%;"><b>0-комн., 20 м²</b><br>Цена: 24000 ₽/мес<br>Цена за м²: 1200<br>Этаж: 3 из 8<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/6041009267185826405/' target='_blank'>Объявление</a></div>`)[0];
+                popup_90a481318f12e90c76487046db9a62ac.setContent(html_23c6b330432f0defedf015a7021508c2);
+            
+        
+
+        circle_marker_4cb0c47335c762bd9dd82ac744a4e81d.bindPopup(popup_90a481318f12e90c76487046db9a62ac)
+        ;
+
+        
+    
+    
+            var circle_marker_dde54bb2eeed3804b55821973e41f235 = L.circleMarker(
+                [64.55785, 40.564163],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_a5b298314c05df383deb8580003d31a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_396e30cea45c4ea0691b413f1d14322d = $(`<div id="html_396e30cea45c4ea0691b413f1d14322d" style="width: 100.0%; height: 100.0%;"><b>2-комн., 54 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 407<br>Этаж: 5 из 9<br>Год постройки: 1982<br><a href='https://realty.yandex.ru/offer/6140943407213106176/' target='_blank'>Объявление</a></div>`)[0];
+                popup_a5b298314c05df383deb8580003d31a4.setContent(html_396e30cea45c4ea0691b413f1d14322d);
+            
+        
+
+        circle_marker_dde54bb2eeed3804b55821973e41f235.bindPopup(popup_a5b298314c05df383deb8580003d31a4)
+        ;
+
+        
+    
+    
+            var circle_marker_0693c6b087d0fac6e43f66762f4f94cc = L.circleMarker(
+                [64.54819, 40.54265],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_98763e29772a00162d02027ab15fbdeb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2366bf6ef11b1270494303051c21a8ac = $(`<div id="html_2366bf6ef11b1270494303051c21a8ac" style="width: 100.0%; height: 100.0%;"><b>0-комн., 17 м²</b><br>Цена: 18000 ₽/мес<br>Цена за м²: 1059<br>Этаж: 5 из 5<br>Год постройки: 1967<br><a href='https://realty.yandex.ru/offer/6162912996092139776/' target='_blank'>Объявление</a></div>`)[0];
+                popup_98763e29772a00162d02027ab15fbdeb.setContent(html_2366bf6ef11b1270494303051c21a8ac);
+            
+        
+
+        circle_marker_0693c6b087d0fac6e43f66762f4f94cc.bindPopup(popup_98763e29772a00162d02027ab15fbdeb)
+        ;
+
+        
+    
+    
+            var circle_marker_8c2301e0cf305647165e65633c3ebb00 = L.circleMarker(
+                [64.53242, 40.6119],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_0e7f7264257ffd6030405aff8530cdf3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3dd9e99cad4b0841a49bf7c2bda79689 = $(`<div id="html_3dd9e99cad4b0841a49bf7c2bda79689" style="width: 100.0%; height: 100.0%;"><b>1-комн., 35 м²</b><br>Цена: 26000 ₽/мес<br>Цена за м²: 743<br>Этаж: 6 из 9<br>Год постройки: 2013<br><a href='https://realty.yandex.ru/offer/6190068674084181536/' target='_blank'>Объявление</a></div>`)[0];
+                popup_0e7f7264257ffd6030405aff8530cdf3.setContent(html_3dd9e99cad4b0841a49bf7c2bda79689);
+            
+        
+
+        circle_marker_8c2301e0cf305647165e65633c3ebb00.bindPopup(popup_0e7f7264257ffd6030405aff8530cdf3)
+        ;
+
+        
+    
+    
+            var circle_marker_82debfb68dfaad72de3c0859b83dd3cd = L.circleMarker(
+                [64.52809, 40.557426],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7598db1fcff3b64e0863da6b6dff2063 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d983ed4ad2cea8516fe8129bf5b2cd0d = $(`<div id="html_d983ed4ad2cea8516fe8129bf5b2cd0d" style="width: 100.0%; height: 100.0%;"><b>1-комн., 38 м²</b><br>Цена: 40000 ₽/мес<br>Цена за м²: 1053<br>Этаж: 4 из 11<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/6190068674086717422/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7598db1fcff3b64e0863da6b6dff2063.setContent(html_d983ed4ad2cea8516fe8129bf5b2cd0d);
+            
+        
+
+        circle_marker_82debfb68dfaad72de3c0859b83dd3cd.bindPopup(popup_7598db1fcff3b64e0863da6b6dff2063)
+        ;
+
+        
+    
+    
+            var circle_marker_dcde6a0aa743131b3cc2fd5d0f7e28a7 = L.circleMarker(
+                [64.55065, 40.550194],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_8b33a697cca4c3134cc626ffbccdfc18 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_481db9f5413bf001053b11704fb6bcb3 = $(`<div id="html_481db9f5413bf001053b11704fb6bcb3" style="width: 100.0%; height: 100.0%;"><b>0-комн., 30 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 1000<br>Этаж: 2 из 16<br>Год постройки: 2019<br><a href='https://realty.yandex.ru/offer/6190068674198674108/' target='_blank'>Объявление</a></div>`)[0];
+                popup_8b33a697cca4c3134cc626ffbccdfc18.setContent(html_481db9f5413bf001053b11704fb6bcb3);
+            
+        
+
+        circle_marker_dcde6a0aa743131b3cc2fd5d0f7e28a7.bindPopup(popup_8b33a697cca4c3134cc626ffbccdfc18)
+        ;
+
+        
+    
+    
+            var circle_marker_07ac7ce2bb1966371fb1db874ad076ce = L.circleMarker(
+                [64.59217, 40.712475],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_eb474042bd52f4222acee664f8160a99 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34cee5e832c0ab65b4a097a5a3c841df = $(`<div id="html_34cee5e832c0ab65b4a097a5a3c841df" style="width: 100.0%; height: 100.0%;"><b>3-комн., 64 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 344<br>Этаж: 2 из 9<br>Год постройки: 1981<br><a href='https://realty.yandex.ru/offer/6190068674199383331/' target='_blank'>Объявление</a></div>`)[0];
+                popup_eb474042bd52f4222acee664f8160a99.setContent(html_34cee5e832c0ab65b4a097a5a3c841df);
+            
+        
+
+        circle_marker_07ac7ce2bb1966371fb1db874ad076ce.bindPopup(popup_eb474042bd52f4222acee664f8160a99)
+        ;
+
+        
+    
+    
+            var circle_marker_25044b6891c3f7b737fbb9a6b5714072 = L.circleMarker(
+                [64.54829, 40.547356],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_ad379424a83e05d9be16c5b62b3e9015 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84109c40c26cc247442eeb42a0566a92 = $(`<div id="html_84109c40c26cc247442eeb42a0566a92" style="width: 100.0%; height: 100.0%;"><b>2-комн., 52 м²</b><br>Цена: 32000 ₽/мес<br>Цена за м²: 615<br>Этаж: 9 из 9<br>Год постройки: 1986<br><a href='https://realty.yandex.ru/offer/6190068674229153255/' target='_blank'>Объявление</a></div>`)[0];
+                popup_ad379424a83e05d9be16c5b62b3e9015.setContent(html_84109c40c26cc247442eeb42a0566a92);
+            
+        
+
+        circle_marker_25044b6891c3f7b737fbb9a6b5714072.bindPopup(popup_ad379424a83e05d9be16c5b62b3e9015)
+        ;
+
+        
+    
+    
+            var circle_marker_90f887dca56b9597e4fe3dbf9cf5d807 = L.circleMarker(
+                [64.50824, 40.678223],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_533803d342e7243509add2042797636d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e5caa92a01143122af92b6b45f0fa45 = $(`<div id="html_1e5caa92a01143122af92b6b45f0fa45" style="width: 100.0%; height: 100.0%;"><b>2-комн., 45 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 556<br>Этаж: 3 из 5<br>Год постройки: 1969<br><a href='https://realty.yandex.ru/offer/6190068674859793068/' target='_blank'>Объявление</a></div>`)[0];
+                popup_533803d342e7243509add2042797636d.setContent(html_1e5caa92a01143122af92b6b45f0fa45);
+            
+        
+
+        circle_marker_90f887dca56b9597e4fe3dbf9cf5d807.bindPopup(popup_533803d342e7243509add2042797636d)
+        ;
+
+        
+    
+    
+            var circle_marker_56fb743f713248a8671296476a15a731 = L.circleMarker(
+                [64.54912, 40.547474],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_3c03cd60b0adb4bfc667af329f04e652 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86a7218c6537669ae87176270e91e78c = $(`<div id="html_86a7218c6537669ae87176270e91e78c" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 26000 ₽/мес<br>Цена за м²: 812<br>Этаж: 3 из 9<br>Год постройки: 1987<br><a href='https://realty.yandex.ru/offer/6190068675946718733/' target='_blank'>Объявление</a></div>`)[0];
+                popup_3c03cd60b0adb4bfc667af329f04e652.setContent(html_86a7218c6537669ae87176270e91e78c);
+            
+        
+
+        circle_marker_56fb743f713248a8671296476a15a731.bindPopup(popup_3c03cd60b0adb4bfc667af329f04e652)
+        ;
+
+        
+    
+    
+            var circle_marker_98066da1c07a45906bffd8912f5471f3 = L.circleMarker(
+                [64.54345, 40.540707],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f195e68798844f7d671b11cddd26f0ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_027c7ae1b386c9bd4afd1fd1e915e9f0 = $(`<div id="html_027c7ae1b386c9bd4afd1fd1e915e9f0" style="width: 100.0%; height: 100.0%;"><b>2-комн., 41 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 732<br>Этаж: 5 из 5<br>Год постройки: 1966<br><a href='https://realty.yandex.ru/offer/6190068676003266669/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f195e68798844f7d671b11cddd26f0ae.setContent(html_027c7ae1b386c9bd4afd1fd1e915e9f0);
+            
+        
+
+        circle_marker_98066da1c07a45906bffd8912f5471f3.bindPopup(popup_f195e68798844f7d671b11cddd26f0ae)
+        ;
+
+        
+    
+    
+            var circle_marker_b414a6f1a4432d4b53ca1ca1f2c920e8 = L.circleMarker(
+                [64.54461, 40.552925],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_8ae497697f5b273fc2a32ba7ece25893 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7acfd86b99af4069a596e7ca05626b32 = $(`<div id="html_7acfd86b99af4069a596e7ca05626b32" style="width: 100.0%; height: 100.0%;"><b>1-комн., 30 м²</b><br>Цена: 10000 ₽/мес<br>Цена за м²: 333<br>Этаж: 1 из 2<br>Год постройки: 1960<br><a href='https://realty.yandex.ru/offer/6190068695469028191/' target='_blank'>Объявление</a></div>`)[0];
+                popup_8ae497697f5b273fc2a32ba7ece25893.setContent(html_7acfd86b99af4069a596e7ca05626b32);
+            
+        
+
+        circle_marker_b414a6f1a4432d4b53ca1ca1f2c920e8.bindPopup(popup_8ae497697f5b273fc2a32ba7ece25893)
+        ;
+
+        
+    
+    
+            var circle_marker_4e39a6569271abb27a4a4bca157157d7 = L.circleMarker(
+                [64.61293, 40.501812],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_8364c1f2f89133a498962bba67a0820e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b82e93183d7899c91d9198548b1315c6 = $(`<div id="html_b82e93183d7899c91d9198548b1315c6" style="width: 100.0%; height: 100.0%;"><b>2-комн., 40 м²</b><br>Цена: 10000 ₽/мес<br>Цена за м²: 250<br>Этаж: 2 из 2<br>Год постройки: 1996<br><a href='https://realty.yandex.ru/offer/6190068696153570344/' target='_blank'>Объявление</a></div>`)[0];
+                popup_8364c1f2f89133a498962bba67a0820e.setContent(html_b82e93183d7899c91d9198548b1315c6);
+            
+        
+
+        circle_marker_4e39a6569271abb27a4a4bca157157d7.bindPopup(popup_8364c1f2f89133a498962bba67a0820e)
+        ;
+
+        
+    
+    
+            var circle_marker_8c5a9997cdf4553c840072d6d10d0bac = L.circleMarker(
+                [64.58715, 40.582138],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_215696b1c33288d9ba8f2be19e0b293d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_38c01c7a6ad98ed79707e6e0c4642d7b = $(`<div id="html_38c01c7a6ad98ed79707e6e0c4642d7b" style="width: 100.0%; height: 100.0%;"><b>2-комн., 45 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 444<br>Этаж: 2 из 5<br>Год постройки: 1974<br><a href='https://realty.yandex.ru/offer/6190068698962768581/' target='_blank'>Объявление</a></div>`)[0];
+                popup_215696b1c33288d9ba8f2be19e0b293d.setContent(html_38c01c7a6ad98ed79707e6e0c4642d7b);
+            
+        
+
+        circle_marker_8c5a9997cdf4553c840072d6d10d0bac.bindPopup(popup_215696b1c33288d9ba8f2be19e0b293d)
+        ;
+
+        
+    
+    
+            var circle_marker_3153490bf8122f5dc3479041ff899fc5 = L.circleMarker(
+                [64.532936, 40.336987],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1e91734751788413d1c7097aca2bbda6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_15d457d4eb173361b9f8d8f5e3e2381e = $(`<div id="html_15d457d4eb173361b9f8d8f5e3e2381e" style="width: 100.0%; height: 100.0%;"><b>4-комн., 61 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 361<br>Этаж: 5 из 5<br>Год постройки: 1973<br><a href='https://realty.yandex.ru/offer/6190068753132879842/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1e91734751788413d1c7097aca2bbda6.setContent(html_15d457d4eb173361b9f8d8f5e3e2381e);
+            
+        
+
+        circle_marker_3153490bf8122f5dc3479041ff899fc5.bindPopup(popup_1e91734751788413d1c7097aca2bbda6)
+        ;
+
+        
+    
+    
+            var circle_marker_9491251070b27ff132f6453956315ed7 = L.circleMarker(
+                [64.54756, 40.52637],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_d5d2cf0e23e561bbd9385fbd30b45f90 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d81241730f68d6174d1a1f06d0eb204 = $(`<div id="html_4d81241730f68d6174d1a1f06d0eb204" style="width: 100.0%; height: 100.0%;"><b>2-комн., 45 м²</b><br>Цена: 24000 ₽/мес<br>Цена за м²: 533<br>Этаж: 2 из 5<br>Год постройки: 1976<br><a href='https://realty.yandex.ru/offer/6190068753132879872/' target='_blank'>Объявление</a></div>`)[0];
+                popup_d5d2cf0e23e561bbd9385fbd30b45f90.setContent(html_4d81241730f68d6174d1a1f06d0eb204);
+            
+        
+
+        circle_marker_9491251070b27ff132f6453956315ed7.bindPopup(popup_d5d2cf0e23e561bbd9385fbd30b45f90)
+        ;
+
+        
+    
+    
+            var circle_marker_c4db8b1896dbf587f697d76d6459fe46 = L.circleMarker(
+                [64.5382, 40.544003],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_ec1bb852bd64f220b986d0770ea8c0c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9e81a4fbedab7b9edb0f7633a581e136 = $(`<div id="html_9e81a4fbedab7b9edb0f7633a581e136" style="width: 100.0%; height: 100.0%;"><b>2-комн., 43 м²</b><br>Цена: 38000 ₽/мес<br>Цена за м²: 884<br>Этаж: 3 из 9<br>Год постройки: 2020<br><a href='https://realty.yandex.ru/offer/6190068753182747834/' target='_blank'>Объявление</a></div>`)[0];
+                popup_ec1bb852bd64f220b986d0770ea8c0c5.setContent(html_9e81a4fbedab7b9edb0f7633a581e136);
+            
+        
+
+        circle_marker_c4db8b1896dbf587f697d76d6459fe46.bindPopup(popup_ec1bb852bd64f220b986d0770ea8c0c5)
+        ;
+
+        
+    
+    
+            var circle_marker_98fee470fa13c70c54da8cd3a679ba85 = L.circleMarker(
+                [64.512146, 40.682148],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_443901ead67f3417950ddc4de0288ba3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c0ab5ac90a823212515b6be7f3875ef2 = $(`<div id="html_c0ab5ac90a823212515b6be7f3875ef2" style="width: 100.0%; height: 100.0%;"><b>3-комн., 64 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 422<br>Этаж: 8 из 9<br>Год постройки: 2024<br><a href='https://realty.yandex.ru/offer/6190068757565804635/' target='_blank'>Объявление</a></div>`)[0];
+                popup_443901ead67f3417950ddc4de0288ba3.setContent(html_c0ab5ac90a823212515b6be7f3875ef2);
+            
+        
+
+        circle_marker_98fee470fa13c70c54da8cd3a679ba85.bindPopup(popup_443901ead67f3417950ddc4de0288ba3)
+        ;
+
+        
+    
+    
+            var circle_marker_effe65c7655942d20b5a29bdb155c0a9 = L.circleMarker(
+                [64.48917, 40.716087],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_0406d07a7f58b28d398aafdd15b92c61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_102caf8908d1b34904eb26709d2845f9 = $(`<div id="html_102caf8908d1b34904eb26709d2845f9" style="width: 100.0%; height: 100.0%;"><b>1-комн., 36 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 556<br>Этаж: 4 из 9<br>Год постройки: 2014<br><a href='https://realty.yandex.ru/offer/6190068758456047111/' target='_blank'>Объявление</a></div>`)[0];
+                popup_0406d07a7f58b28d398aafdd15b92c61.setContent(html_102caf8908d1b34904eb26709d2845f9);
+            
+        
+
+        circle_marker_effe65c7655942d20b5a29bdb155c0a9.bindPopup(popup_0406d07a7f58b28d398aafdd15b92c61)
+        ;
+
+        
+    
+    
+            var circle_marker_dde213e9dc862a4861822ec05a99b8a0 = L.circleMarker(
+                [64.54786, 40.565575],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_6c405b047feb0216e57f41a014570212 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d3f57207e70034f7bcd3097459b83e7 = $(`<div id="html_9d3f57207e70034f7bcd3097459b83e7" style="width: 100.0%; height: 100.0%;"><b>1-комн., 30 м²</b><br>Цена: 23000 ₽/мес<br>Цена за м²: 767<br>Этаж: 4 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/6190068783134379112/' target='_blank'>Объявление</a></div>`)[0];
+                popup_6c405b047feb0216e57f41a014570212.setContent(html_9d3f57207e70034f7bcd3097459b83e7);
+            
+        
+
+        circle_marker_dde213e9dc862a4861822ec05a99b8a0.bindPopup(popup_6c405b047feb0216e57f41a014570212)
+        ;
+
+        
+    
+    
+            var circle_marker_dbb5292a5400d0c3b79bef7a8f313874 = L.circleMarker(
+                [64.55145, 40.566273],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_813dc95b66e943e70f2127192ed707fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2951b8b2f1333f6ccece2ca533ddf24f = $(`<div id="html_2951b8b2f1333f6ccece2ca533ddf24f" style="width: 100.0%; height: 100.0%;"><b>1-комн., 25 м²</b><br>Цена: 24000 ₽/мес<br>Цена за м²: 960<br>Этаж: 1 из 5<br>Год постройки: 1973<br><a href='https://realty.yandex.ru/offer/6190068784246176469/' target='_blank'>Объявление</a></div>`)[0];
+                popup_813dc95b66e943e70f2127192ed707fc.setContent(html_2951b8b2f1333f6ccece2ca533ddf24f);
+            
+        
+
+        circle_marker_dbb5292a5400d0c3b79bef7a8f313874.bindPopup(popup_813dc95b66e943e70f2127192ed707fc)
+        ;
+
+        
+    
+    
+            var circle_marker_0b37f58ea1de52b60b43a7a969e8b2d8 = L.circleMarker(
+                [64.55724, 40.556187],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_75ea8c5873a4739da5675765b268dfde = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00a8995c2cf424ff982e93d74b9ba28d = $(`<div id="html_00a8995c2cf424ff982e93d74b9ba28d" style="width: 100.0%; height: 100.0%;"><b>1-комн., 40 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 750<br>Этаж: 4 из 11<br>Год постройки: 2013<br><a href='https://realty.yandex.ru/offer/6205756523858363392/' target='_blank'>Объявление</a></div>`)[0];
+                popup_75ea8c5873a4739da5675765b268dfde.setContent(html_00a8995c2cf424ff982e93d74b9ba28d);
+            
+        
+
+        circle_marker_0b37f58ea1de52b60b43a7a969e8b2d8.bindPopup(popup_75ea8c5873a4739da5675765b268dfde)
+        ;
+
+        
+    
+    
+            var circle_marker_ed27dd3ba5adb0222eb47cd7e1069ba4 = L.circleMarker(
+                [64.460625, 40.65287],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_107a3fa3025e067131c5ee3d6983a402 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_539900dbed506bd11b5bf1691d912fcc = $(`<div id="html_539900dbed506bd11b5bf1691d912fcc" style="width: 100.0%; height: 100.0%;"><b>3-комн., 63 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 349<br>Этаж: 5 из 5<br>Год постройки: 1994<br><a href='https://realty.yandex.ru/offer/6279491170940642632/' target='_blank'>Объявление</a></div>`)[0];
+                popup_107a3fa3025e067131c5ee3d6983a402.setContent(html_539900dbed506bd11b5bf1691d912fcc);
+            
+        
+
+        circle_marker_ed27dd3ba5adb0222eb47cd7e1069ba4.bindPopup(popup_107a3fa3025e067131c5ee3d6983a402)
+        ;
+
+        
+    
+    
+            var circle_marker_498de9b1db76057d37b964f40513bd5f = L.circleMarker(
+                [64.59926, 40.59865],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1cdb0626c31f2ec04ebe227099ff92e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79080c78c34ed1e3d6b1064ff3c3fb06 = $(`<div id="html_79080c78c34ed1e3d6b1064ff3c3fb06" style="width: 100.0%; height: 100.0%;"><b>2-комн., 45 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 489<br>Этаж: 7 из 9<br>Год постройки: 1977<br><a href='https://realty.yandex.ru/offer/6279491170940643711/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1cdb0626c31f2ec04ebe227099ff92e7.setContent(html_79080c78c34ed1e3d6b1064ff3c3fb06);
+            
+        
+
+        circle_marker_498de9b1db76057d37b964f40513bd5f.bindPopup(popup_1cdb0626c31f2ec04ebe227099ff92e7)
+        ;
+
+        
+    
+    
+            var circle_marker_77ded8eed20637f9a1a7db67a3d52e6f = L.circleMarker(
+                [64.52397, 40.606537],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_caad0dcbbd859d8edf1d22505d9a758f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aa03ae18c5d03e28342da00c8c5cf765 = $(`<div id="html_aa03ae18c5d03e28342da00c8c5cf765" style="width: 100.0%; height: 100.0%;"><b>0-комн., 26 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 1154<br>Этаж: 15 из 16<br>Год постройки: 2023<br><a href='https://realty.yandex.ru/offer/6279491170940664885/' target='_blank'>Объявление</a></div>`)[0];
+                popup_caad0dcbbd859d8edf1d22505d9a758f.setContent(html_aa03ae18c5d03e28342da00c8c5cf765);
+            
+        
+
+        circle_marker_77ded8eed20637f9a1a7db67a3d52e6f.bindPopup(popup_caad0dcbbd859d8edf1d22505d9a758f)
+        ;
+
+        
+    
+    
+            var circle_marker_87c96372d27eae70ee6197120e6c3bb6 = L.circleMarker(
+                [64.528076, 40.602325],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_9a289a36aa7c62e951367781a5e39697 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7baa37cd13806c549399f83ce611317a = $(`<div id="html_7baa37cd13806c549399f83ce611317a" style="width: 100.0%; height: 100.0%;"><b>0-комн., 31 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 968<br>Этаж: 3 из 9<br>Год постройки: 2023<br><a href='https://realty.yandex.ru/offer/6279491170940667743/' target='_blank'>Объявление</a></div>`)[0];
+                popup_9a289a36aa7c62e951367781a5e39697.setContent(html_7baa37cd13806c549399f83ce611317a);
+            
+        
+
+        circle_marker_87c96372d27eae70ee6197120e6c3bb6.bindPopup(popup_9a289a36aa7c62e951367781a5e39697)
+        ;
+
+        
+    
+    
+            var circle_marker_38c9492f515343346796f322eda88c77 = L.circleMarker(
+                [64.54206, 40.531204],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_be97567858e47ab2b0890aa56f401e74 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44df5a9209f74376c26df48beb5f0987 = $(`<div id="html_44df5a9209f74376c26df48beb5f0987" style="width: 100.0%; height: 100.0%;"><b>0-комн., 33 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 909<br>Этаж: 6 из 14<br>Год постройки: 2019<br><a href='https://realty.yandex.ru/offer/6279491170940702239/' target='_blank'>Объявление</a></div>`)[0];
+                popup_be97567858e47ab2b0890aa56f401e74.setContent(html_44df5a9209f74376c26df48beb5f0987);
+            
+        
+
+        circle_marker_38c9492f515343346796f322eda88c77.bindPopup(popup_be97567858e47ab2b0890aa56f401e74)
+        ;
+
+        
+    
+    
+            var circle_marker_4fed15ce1a975c24a6a467f489bb9266 = L.circleMarker(
+                [64.54426, 40.573135],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_84194bfcb6d2162ed7cddad97fd4fca0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_06680b889327f924c644f1173ec6ea1b = $(`<div id="html_06680b889327f924c644f1173ec6ea1b" style="width: 100.0%; height: 100.0%;"><b>1-комн., 35 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 857<br>Этаж: 1 из 10<br>Год постройки: 1982<br><a href='https://realty.yandex.ru/offer/6279491170940702243/' target='_blank'>Объявление</a></div>`)[0];
+                popup_84194bfcb6d2162ed7cddad97fd4fca0.setContent(html_06680b889327f924c644f1173ec6ea1b);
+            
+        
+
+        circle_marker_4fed15ce1a975c24a6a467f489bb9266.bindPopup(popup_84194bfcb6d2162ed7cddad97fd4fca0)
+        ;
+
+        
+    
+    
+            var circle_marker_282ecc4cc4d17249cf838ca2c6264951 = L.circleMarker(
+                [64.45671, 40.64909],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_732a2ca05772d7e0a21c042de6d1d59c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d65e3a5d770024c9ee739aee9f770cb7 = $(`<div id="html_d65e3a5d770024c9ee739aee9f770cb7" style="width: 100.0%; height: 100.0%;"><b>2-комн., 42 м²</b><br>Цена: 13000 ₽/мес<br>Цена за м²: 308<br>Этаж: 2 из 2<br>Год постройки: 1962<br><a href='https://realty.yandex.ru/offer/6279491170940726171/' target='_blank'>Объявление</a></div>`)[0];
+                popup_732a2ca05772d7e0a21c042de6d1d59c.setContent(html_d65e3a5d770024c9ee739aee9f770cb7);
+            
+        
+
+        circle_marker_282ecc4cc4d17249cf838ca2c6264951.bindPopup(popup_732a2ca05772d7e0a21c042de6d1d59c)
+        ;
+
+        
+    
+    
+            var circle_marker_21a00abd5249d55b5170b4f57a2996cd = L.circleMarker(
+                [64.571106, 40.516937],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_aa637d652288ee953a727ba502029235 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ed9954b672489fbe026fafde1b0c9dc = $(`<div id="html_6ed9954b672489fbe026fafde1b0c9dc" style="width: 100.0%; height: 100.0%;"><b>2-комн., 41 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 732<br>Этаж: 2 из 4<br>Год постройки: 2008<br><a href='https://realty.yandex.ru/offer/6279491170940727108/' target='_blank'>Объявление</a></div>`)[0];
+                popup_aa637d652288ee953a727ba502029235.setContent(html_6ed9954b672489fbe026fafde1b0c9dc);
+            
+        
+
+        circle_marker_21a00abd5249d55b5170b4f57a2996cd.bindPopup(popup_aa637d652288ee953a727ba502029235)
+        ;
+
+        
+    
+    
+            var circle_marker_4f7ec1e72c285e3dddb2cbd1d3fe8ce7 = L.circleMarker(
+                [64.574165, 40.518826],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_4e12c2d07837741ae29fac4fd87c7b5c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_75608dd1c0b8e486dccc95616f326dbd = $(`<div id="html_75608dd1c0b8e486dccc95616f326dbd" style="width: 100.0%; height: 100.0%;"><b>1-комн., 51 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 490<br>Этаж: 3 из 14<br>Год постройки: 2015<br><a href='https://realty.yandex.ru/offer/6279491170940727139/' target='_blank'>Объявление</a></div>`)[0];
+                popup_4e12c2d07837741ae29fac4fd87c7b5c.setContent(html_75608dd1c0b8e486dccc95616f326dbd);
+            
+        
+
+        circle_marker_4f7ec1e72c285e3dddb2cbd1d3fe8ce7.bindPopup(popup_4e12c2d07837741ae29fac4fd87c7b5c)
+        ;
+
+        
+    
+    
+            var circle_marker_7f3c27ecc844d7caccde807d02c72140 = L.circleMarker(
+                [64.51579, 40.66473],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7120d69059057957962ab033b42a9a47 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_17c1fd2d1e0c129b5b2d3ae82ec1dc50 = $(`<div id="html_17c1fd2d1e0c129b5b2d3ae82ec1dc50" style="width: 100.0%; height: 100.0%;"><b>2-комн., 60 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 333<br>Этаж: 7 из 9<br>Год постройки: 1985<br><a href='https://realty.yandex.ru/offer/6279491170940727199/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7120d69059057957962ab033b42a9a47.setContent(html_17c1fd2d1e0c129b5b2d3ae82ec1dc50);
+            
+        
+
+        circle_marker_7f3c27ecc844d7caccde807d02c72140.bindPopup(popup_7120d69059057957962ab033b42a9a47)
+        ;
+
+        
+    
+    
+            var circle_marker_35f5bd334946a18403fd7e44b549d857 = L.circleMarker(
+                [64.548515, 40.55643],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_60ce02bcef3e9a11cf5054a274c72f51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30cde5ec8a372780eeaf732458cb89f1 = $(`<div id="html_30cde5ec8a372780eeaf732458cb89f1" style="width: 100.0%; height: 100.0%;"><b>3-комн., 63 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 444<br>Этаж: 5 из 5<br>Год постройки: 1974<br><a href='https://realty.yandex.ru/offer/6279491170940727261/' target='_blank'>Объявление</a></div>`)[0];
+                popup_60ce02bcef3e9a11cf5054a274c72f51.setContent(html_30cde5ec8a372780eeaf732458cb89f1);
+            
+        
+
+        circle_marker_35f5bd334946a18403fd7e44b549d857.bindPopup(popup_60ce02bcef3e9a11cf5054a274c72f51)
+        ;
+
+        
+    
+    
+            var circle_marker_ad1d3ce35e478b522d6d9d4ab0fb7a63 = L.circleMarker(
+                [64.523705, 40.613804],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_409cc0131088cf6dfeb770ecf5a4727a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_432064a58d07dd32bdd75236700cb4b5 = $(`<div id="html_432064a58d07dd32bdd75236700cb4b5" style="width: 100.0%; height: 100.0%;"><b>3-комн., 72 м²</b><br>Цена: 50000 ₽/мес<br>Цена за м²: 694<br>Этаж: 3 из 9<br>Год постройки: 1985<br><a href='https://realty.yandex.ru/offer/6279491170940727288/' target='_blank'>Объявление</a></div>`)[0];
+                popup_409cc0131088cf6dfeb770ecf5a4727a.setContent(html_432064a58d07dd32bdd75236700cb4b5);
+            
+        
+
+        circle_marker_ad1d3ce35e478b522d6d9d4ab0fb7a63.bindPopup(popup_409cc0131088cf6dfeb770ecf5a4727a)
+        ;
+
+        
+    
+    
+            var circle_marker_f91f536ec4e403c6fe58c38eda5763ef = L.circleMarker(
+                [64.533585, 40.529095],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f800897c1e83c3c62552f4d48789f77b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae0fb967fd285da12789bb947c299360 = $(`<div id="html_ae0fb967fd285da12789bb947c299360" style="width: 100.0%; height: 100.0%;"><b>0-комн., 36 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 750<br>Этаж: 2 из 5<br>Год постройки: 1961<br><a href='https://realty.yandex.ru/offer/6279491170940727321/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f800897c1e83c3c62552f4d48789f77b.setContent(html_ae0fb967fd285da12789bb947c299360);
+            
+        
+
+        circle_marker_f91f536ec4e403c6fe58c38eda5763ef.bindPopup(popup_f800897c1e83c3c62552f4d48789f77b)
+        ;
+
+        
+    
+    
+            var circle_marker_0051fbf461cf1548c370ca5068632b4c = L.circleMarker(
+                [64.53508, 40.53926],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_43931aaaa9860969bd6b26af8e08a2a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48804892b79e0d7395be1415e1504647 = $(`<div id="html_48804892b79e0d7395be1415e1504647" style="width: 100.0%; height: 100.0%;"><b>2-комн., 45 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 556<br>Этаж: 2 из 9<br>Год постройки: 1976<br><a href='https://realty.yandex.ru/offer/6279491170940727355/' target='_blank'>Объявление</a></div>`)[0];
+                popup_43931aaaa9860969bd6b26af8e08a2a6.setContent(html_48804892b79e0d7395be1415e1504647);
+            
+        
+
+        circle_marker_0051fbf461cf1548c370ca5068632b4c.bindPopup(popup_43931aaaa9860969bd6b26af8e08a2a6)
+        ;
+
+        
+    
+    
+            var circle_marker_a8e2c622c0e466d4d4688b1a73cf3b66 = L.circleMarker(
+                [64.51928, 40.66057],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_0129fb5ff64dcc526a89e41647b98281 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c93664da07f7ea0478242b8a6b045de = $(`<div id="html_6c93664da07f7ea0478242b8a6b045de" style="width: 100.0%; height: 100.0%;"><b>0-комн., 45 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 600<br>Этаж: 1 из 2<br>Год постройки: 2000<br><a href='https://realty.yandex.ru/offer/6279491170940728101/' target='_blank'>Объявление</a></div>`)[0];
+                popup_0129fb5ff64dcc526a89e41647b98281.setContent(html_6c93664da07f7ea0478242b8a6b045de);
+            
+        
+
+        circle_marker_a8e2c622c0e466d4d4688b1a73cf3b66.bindPopup(popup_0129fb5ff64dcc526a89e41647b98281)
+        ;
+
+        
+    
+    
+            var circle_marker_61e4c62eb30280f18c2af6f305f726cf = L.circleMarker(
+                [64.54575, 40.565296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_c229d9004310808c61c57a59dc483c0a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_746a3d3646523783147bf22d61a617e4 = $(`<div id="html_746a3d3646523783147bf22d61a617e4" style="width: 100.0%; height: 100.0%;"><b>2-комн., 48 м²</b><br>Цена: 23000 ₽/мес<br>Цена за м²: 479<br>Этаж: 3 из 5<br>Год постройки: 1971<br><a href='https://realty.yandex.ru/offer/6279491170940728162/' target='_blank'>Объявление</a></div>`)[0];
+                popup_c229d9004310808c61c57a59dc483c0a.setContent(html_746a3d3646523783147bf22d61a617e4);
+            
+        
+
+        circle_marker_61e4c62eb30280f18c2af6f305f726cf.bindPopup(popup_c229d9004310808c61c57a59dc483c0a)
+        ;
+
+        
+    
+    
+            var circle_marker_4453742dd5954bd840eb74e39c4f9a03 = L.circleMarker(
+                [64.54593, 40.575993],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_1b7c425b4976aa155bca5c9b641c72b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1631e9a3eeee8244f32546241fb40f22 = $(`<div id="html_1631e9a3eeee8244f32546241fb40f22" style="width: 100.0%; height: 100.0%;"><b>1-комн., 32 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 791<br>Этаж: 9 из 9<br>Год постройки: 1977<br><a href='https://realty.yandex.ru/offer/6279491170940728218/' target='_blank'>Объявление</a></div>`)[0];
+                popup_1b7c425b4976aa155bca5c9b641c72b7.setContent(html_1631e9a3eeee8244f32546241fb40f22);
+            
+        
+
+        circle_marker_4453742dd5954bd840eb74e39c4f9a03.bindPopup(popup_1b7c425b4976aa155bca5c9b641c72b7)
+        ;
+
+        
+    
+    
+            var circle_marker_20a97a90e977247fdf1d04ee662d028b = L.circleMarker(
+                [64.61495, 40.49706],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_895214c931529c713b0ce570814bb7a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_94f97f391dba64da4087b91ccebdfff9 = $(`<div id="html_94f97f391dba64da4087b91ccebdfff9" style="width: 100.0%; height: 100.0%;"><b>2-комн., 54 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 370<br>Этаж: 2 из 2<br>Год постройки: 2007<br><a href='https://realty.yandex.ru/offer/6430304413254787328/' target='_blank'>Объявление</a></div>`)[0];
+                popup_895214c931529c713b0ce570814bb7a6.setContent(html_94f97f391dba64da4087b91ccebdfff9);
+            
+        
+
+        circle_marker_20a97a90e977247fdf1d04ee662d028b.bindPopup(popup_895214c931529c713b0ce570814bb7a6)
+        ;
+
+        
+    
+    
+            var circle_marker_bdc654d2fa17d735bfb3b3e3ea52c962 = L.circleMarker(
+                [64.5768, 40.510033],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_4a17628ff273e93d5dbe10c3609c805f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34095a0dbda49e30f49c9f87b8e79acf = $(`<div id="html_34095a0dbda49e30f49c9f87b8e79acf" style="width: 100.0%; height: 100.0%;"><b>3-комн., 72 м²</b><br>Цена: 43000 ₽/мес<br>Цена за м²: 597<br>Этаж: 3 из 9<br>Год постройки: 1993<br><a href='https://realty.yandex.ru/offer/644366998861553408/' target='_blank'>Объявление</a></div>`)[0];
+                popup_4a17628ff273e93d5dbe10c3609c805f.setContent(html_34095a0dbda49e30f49c9f87b8e79acf);
+            
+        
+
+        circle_marker_bdc654d2fa17d735bfb3b3e3ea52c962.bindPopup(popup_4a17628ff273e93d5dbe10c3609c805f)
+        ;
+
+        
+    
+    
+            var circle_marker_1a355afca8121c6c9a291b8452c5b28f = L.circleMarker(
+                [64.56114, 40.538445],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_5f071083a74295dbf1b34e22f670492d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f67f47b302513dd43f7892fb4ad0ac25 = $(`<div id="html_f67f47b302513dd43f7892fb4ad0ac25" style="width: 100.0%; height: 100.0%;"><b>2-комн., 44 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 497<br>Этаж: 1 из 5<br>Год постройки: 1965<br><a href='https://realty.yandex.ru/offer/6752893454059411456/' target='_blank'>Объявление</a></div>`)[0];
+                popup_5f071083a74295dbf1b34e22f670492d.setContent(html_f67f47b302513dd43f7892fb4ad0ac25);
+            
+        
+
+        circle_marker_1a355afca8121c6c9a291b8452c5b28f.bindPopup(popup_5f071083a74295dbf1b34e22f670492d)
+        ;
+
+        
+    
+    
+            var circle_marker_ec0603f0b10cf3d289eb014f916d5dee = L.circleMarker(
+                [64.548874, 40.532642],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_fcd545f6a56186cbfaada0a99f7329bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0807713d2a97c0dbd5aeb787805bcd87 = $(`<div id="html_0807713d2a97c0dbd5aeb787805bcd87" style="width: 100.0%; height: 100.0%;"><b>0-комн., 18 м²</b><br>Цена: 18000 ₽/мес<br>Цена за м²: 1000<br>Этаж: 5 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/6795325601623371264/' target='_blank'>Объявление</a></div>`)[0];
+                popup_fcd545f6a56186cbfaada0a99f7329bd.setContent(html_0807713d2a97c0dbd5aeb787805bcd87);
+            
+        
+
+        circle_marker_ec0603f0b10cf3d289eb014f916d5dee.bindPopup(popup_fcd545f6a56186cbfaada0a99f7329bd)
+        ;
+
+        
+    
+    
+            var circle_marker_486b72dff28f187841ae1b29c002dc87 = L.circleMarker(
+                [64.537254, 40.532883],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_f5ff71c3aaaa9ad4c55e898399c6d4b3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_20d0a8eee55934bbebff0e7c15877186 = $(`<div id="html_20d0a8eee55934bbebff0e7c15877186" style="width: 100.0%; height: 100.0%;"><b>1-комн., 40 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 700<br>Этаж: 10 из 16<br>Год постройки: 2019<br><a href='https://realty.yandex.ru/offer/6878602886824422144/' target='_blank'>Объявление</a></div>`)[0];
+                popup_f5ff71c3aaaa9ad4c55e898399c6d4b3.setContent(html_20d0a8eee55934bbebff0e7c15877186);
+            
+        
+
+        circle_marker_486b72dff28f187841ae1b29c002dc87.bindPopup(popup_f5ff71c3aaaa9ad4c55e898399c6d4b3)
+        ;
+
+        
+    
+    
+            var circle_marker_0b6c11c1a3c31bbbc6ce1ce4325c8fbf = L.circleMarker(
+                [64.49397, 40.722454],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_ac2f9e4e0e86ccb52b6b369ec2b8cf64 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_49b28bc5ea65437025e7575c4134a10a = $(`<div id="html_49b28bc5ea65437025e7575c4134a10a" style="width: 100.0%; height: 100.0%;"><b>1-комн., 31 м²</b><br>Цена: 22000 ₽/мес<br>Цена за м²: 710<br>Этаж: 1 из 4<br>Год постройки: 2021<br><a href='https://realty.yandex.ru/offer/7416282734457921024/' target='_blank'>Объявление</a></div>`)[0];
+                popup_ac2f9e4e0e86ccb52b6b369ec2b8cf64.setContent(html_49b28bc5ea65437025e7575c4134a10a);
+            
+        
+
+        circle_marker_0b6c11c1a3c31bbbc6ce1ce4325c8fbf.bindPopup(popup_ac2f9e4e0e86ccb52b6b369ec2b8cf64)
+        ;
+
+        
+    
+    
+            var circle_marker_4bcb468d4002e5c41ac07fc8d35403dd = L.circleMarker(
+                [64.53791, 40.53387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_135de389a9ff79a8bd3dc0eedb823499 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c96fc6ed829e129147788d82d554750b = $(`<div id="html_c96fc6ed829e129147788d82d554750b" style="width: 100.0%; height: 100.0%;"><b>0-комн., 22 м²</b><br>Цена: 35000 ₽/мес<br>Цена за м²: 1591<br>Этаж: 1 из 3<br>Год постройки: 2001<br><a href='https://realty.yandex.ru/offer/7434706003460136192/' target='_blank'>Объявление</a></div>`)[0];
+                popup_135de389a9ff79a8bd3dc0eedb823499.setContent(html_c96fc6ed829e129147788d82d554750b);
+            
+        
+
+        circle_marker_4bcb468d4002e5c41ac07fc8d35403dd.bindPopup(popup_135de389a9ff79a8bd3dc0eedb823499)
+        ;
+
+        
+    
+    
+            var circle_marker_ae6d75e02fe20b97b52663952baae9cf = L.circleMarker(
+                [64.54871, 40.5222],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_a58137c6da1871c38066a0f216c87f0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8743433d78745d42654541ee9ea2eb71 = $(`<div id="html_8743433d78745d42654541ee9ea2eb71" style="width: 100.0%; height: 100.0%;"><b>3-комн., 54 м²</b><br>Цена: 31000 ₽/мес<br>Цена за м²: 574<br>Этаж: 3 из 5<br>Год постройки: 1964<br><a href='https://realty.yandex.ru/offer/7521909861936693760/' target='_blank'>Объявление</a></div>`)[0];
+                popup_a58137c6da1871c38066a0f216c87f0e.setContent(html_8743433d78745d42654541ee9ea2eb71);
+            
+        
+
+        circle_marker_ae6d75e02fe20b97b52663952baae9cf.bindPopup(popup_a58137c6da1871c38066a0f216c87f0e)
+        ;
+
+        
+    
+    
+            var circle_marker_279a5ae3da079e487d692ad92d112984 = L.circleMarker(
+                [64.549, 40.51819],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7dc6740264ce23d0bdca826354a27686 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_513a98fc5706212d85be11d2f188a2ae = $(`<div id="html_513a98fc5706212d85be11d2f188a2ae" style="width: 100.0%; height: 100.0%;"><b>2-комн., 44 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 614<br>Этаж: 3 из 5<br>Год постройки: 1972<br><a href='https://realty.yandex.ru/offer/7570278524759294976/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7dc6740264ce23d0bdca826354a27686.setContent(html_513a98fc5706212d85be11d2f188a2ae);
+            
+        
+
+        circle_marker_279a5ae3da079e487d692ad92d112984.bindPopup(popup_7dc6740264ce23d0bdca826354a27686)
+        ;
+
+        
+    
+    
+            var circle_marker_28566d2cc3e581ded43199bfc432b199 = L.circleMarker(
+                [64.53441, 40.627037],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_5336b48f4eaf905fd021c606e68c4e29 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6b2ecb163f4d412407ca681f30a796b = $(`<div id="html_c6b2ecb163f4d412407ca681f30a796b" style="width: 100.0%; height: 100.0%;"><b>2-комн., 51 м²</b><br>Цена: 36000 ₽/мес<br>Цена за м²: 700<br>Этаж: 1 из 5<br>Год постройки: 1988<br><a href='https://realty.yandex.ru/offer/7770332966035408021/' target='_blank'>Объявление</a></div>`)[0];
+                popup_5336b48f4eaf905fd021c606e68c4e29.setContent(html_c6b2ecb163f4d412407ca681f30a796b);
+            
+        
+
+        circle_marker_28566d2cc3e581ded43199bfc432b199.bindPopup(popup_5336b48f4eaf905fd021c606e68c4e29)
+        ;
+
+        
+    
+    
+            var circle_marker_dd1f22874931d296a07b980a990b7b94 = L.circleMarker(
+                [64.55078, 40.570057],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_9e9b3fac79f742622438d408798a1a8a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11ea81f47faeec6b7fcc66a3db3a6997 = $(`<div id="html_11ea81f47faeec6b7fcc66a3db3a6997" style="width: 100.0%; height: 100.0%;"><b>2-комн., 51 м²</b><br>Цена: 30000 ₽/мес<br>Цена за м²: 587<br>Этаж: 7 из 11<br>Год постройки: 1977<br><a href='https://realty.yandex.ru/offer/7770334568011667048/' target='_blank'>Объявление</a></div>`)[0];
+                popup_9e9b3fac79f742622438d408798a1a8a.setContent(html_11ea81f47faeec6b7fcc66a3db3a6997);
+            
+        
+
+        circle_marker_dd1f22874931d296a07b980a990b7b94.bindPopup(popup_9e9b3fac79f742622438d408798a1a8a)
+        ;
+
+        
+    
+    
+            var circle_marker_63ce33da79c392768c0e952374c06f06 = L.circleMarker(
+                [64.560165, 40.524467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_b3b096fcbf9469c3886a1c0db6fa0b3d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_094b077e15400eb6ad0bd146d1131eef = $(`<div id="html_094b077e15400eb6ad0bd146d1131eef" style="width: 100.0%; height: 100.0%;"><b>0-комн., 24 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 1149<br>Этаж: 5 из 8<br>Год постройки: 2025<br><a href='https://realty.yandex.ru/offer/7770334671902472875/' target='_blank'>Объявление</a></div>`)[0];
+                popup_b3b096fcbf9469c3886a1c0db6fa0b3d.setContent(html_094b077e15400eb6ad0bd146d1131eef);
+            
+        
+
+        circle_marker_63ce33da79c392768c0e952374c06f06.bindPopup(popup_b3b096fcbf9469c3886a1c0db6fa0b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_54c80f737094138da689447aa2d49e78 = L.circleMarker(
+                [64.51184, 40.676247],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_7bd48b4e0766e24c3374b91166601a4d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e9eb461b9205977d9ebc05cbc75d2de = $(`<div id="html_6e9eb461b9205977d9ebc05cbc75d2de" style="width: 100.0%; height: 100.0%;"><b>2-комн., 54 м²</b><br>Цена: 20000 ₽/мес<br>Цена за м²: 370<br>Этаж: 9 из 9<br>Год постройки: 1973<br><a href='https://realty.yandex.ru/offer/8236895918762370560/' target='_blank'>Объявление</a></div>`)[0];
+                popup_7bd48b4e0766e24c3374b91166601a4d.setContent(html_6e9eb461b9205977d9ebc05cbc75d2de);
+            
+        
+
+        circle_marker_54c80f737094138da689447aa2d49e78.bindPopup(popup_7bd48b4e0766e24c3374b91166601a4d)
+        ;
+
+        
+    
+    
+            var circle_marker_fcf5bced6d46c616a89d84c47a72fb32 = L.circleMarker(
+                [64.527824, 40.581837],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_8e2a7c1c215e08914f783a0b6f52c866 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aa19d736dad4aa6faef264fc5870dc1b = $(`<div id="html_aa19d736dad4aa6faef264fc5870dc1b" style="width: 100.0%; height: 100.0%;"><b>1-комн., 41 м²</b><br>Цена: 33000 ₽/мес<br>Цена за м²: 805<br>Этаж: 8 из 10<br>Год постройки: 2021<br><a href='https://realty.yandex.ru/offer/8611731318070427393/' target='_blank'>Объявление</a></div>`)[0];
+                popup_8e2a7c1c215e08914f783a0b6f52c866.setContent(html_aa19d736dad4aa6faef264fc5870dc1b);
+            
+        
+
+        circle_marker_fcf5bced6d46c616a89d84c47a72fb32.bindPopup(popup_8e2a7c1c215e08914f783a0b6f52c866)
+        ;
+
+        
+    
+    
+            var circle_marker_4b511123cf62851ec45a899115b95556 = L.circleMarker(
+                [64.54009, 40.52002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_039f0b2b690a8d71ec46e7814ad45d2f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5045984305e19dd07e5571e531784ea5 = $(`<div id="html_5045984305e19dd07e5571e531784ea5" style="width: 100.0%; height: 100.0%;"><b>1-комн., 25 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 1000<br>Этаж: 4 из 13<br>Год постройки: 1975<br><a href='https://realty.yandex.ru/offer/8736851875274823168/' target='_blank'>Объявление</a></div>`)[0];
+                popup_039f0b2b690a8d71ec46e7814ad45d2f.setContent(html_5045984305e19dd07e5571e531784ea5);
+            
+        
+
+        circle_marker_4b511123cf62851ec45a899115b95556.bindPopup(popup_039f0b2b690a8d71ec46e7814ad45d2f)
+        ;
+
+        
+    
+    
+            var circle_marker_1dbcdbbfb775d853877577cf2f522cf1 = L.circleMarker(
+                [64.53804, 40.55748],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_bd4e77dafe8f74ceb3ed35ce4310b047 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2fcffc8ecd56cd436c051da1d018ca51 = $(`<div id="html_2fcffc8ecd56cd436c051da1d018ca51" style="width: 100.0%; height: 100.0%;"><b>2-комн., 46 м²</b><br>Цена: 27000 ₽/мес<br>Цена за м²: 587<br>Этаж: 3 из 5<br>Год постройки: 1976<br><a href='https://realty.yandex.ru/offer/8876890545831051520/' target='_blank'>Объявление</a></div>`)[0];
+                popup_bd4e77dafe8f74ceb3ed35ce4310b047.setContent(html_2fcffc8ecd56cd436c051da1d018ca51);
+            
+        
+
+        circle_marker_1dbcdbbfb775d853877577cf2f522cf1.bindPopup(popup_bd4e77dafe8f74ceb3ed35ce4310b047)
+        ;
+
+        
+    
+    
+            var circle_marker_b26a3fb05122951071fad0a3b9fc5d77 = L.circleMarker(
+                [64.56555, 40.53637],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_bee95ad04b1a2823903ae370e2ca8085 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7f200f80a4f2e11fc86fba0d55c5609d = $(`<div id="html_7f200f80a4f2e11fc86fba0d55c5609d" style="width: 100.0%; height: 100.0%;"><b>2-комн., 44 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 568<br>Этаж: 4 из 5<br>Год постройки: 1962<br><a href='https://realty.yandex.ru/offer/9000378042925442560/' target='_blank'>Объявление</a></div>`)[0];
+                popup_bee95ad04b1a2823903ae370e2ca8085.setContent(html_7f200f80a4f2e11fc86fba0d55c5609d);
+            
+        
+
+        circle_marker_b26a3fb05122951071fad0a3b9fc5d77.bindPopup(popup_bee95ad04b1a2823903ae370e2ca8085)
+        ;
+
+        
+    
+    
+            var circle_marker_689466762ec042ffa8c4f08acac71e26 = L.circleMarker(
+                [64.55394, 40.529938],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_6f9a06422142791e53b467959e9fe149 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23c4acc6752a5c40880ac0d4896593b8 = $(`<div id="html_23c4acc6752a5c40880ac0d4896593b8" style="width: 100.0%; height: 100.0%;"><b>2-комн., 46 м²</b><br>Цена: 29000 ₽/мес<br>Цена за м²: 630<br>Этаж: 1 из 5<br>Год постройки: 1970<br><a href='https://realty.yandex.ru/offer/9000420280512329728/' target='_blank'>Объявление</a></div>`)[0];
+                popup_6f9a06422142791e53b467959e9fe149.setContent(html_23c4acc6752a5c40880ac0d4896593b8);
+            
+        
+
+        circle_marker_689466762ec042ffa8c4f08acac71e26.bindPopup(popup_6f9a06422142791e53b467959e9fe149)
+        ;
+
+        
+    
+    
+            var circle_marker_90680853300ce27788bc1a6f75ad3785 = L.circleMarker(
+                [64.54037, 40.521385],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_579c24b8cc3ec66e843af915d7d7bac4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9891826ea7791edb24a9121b6b08d9b2 = $(`<div id="html_9891826ea7791edb24a9121b6b08d9b2" style="width: 100.0%; height: 100.0%;"><b>1-комн., 26 м²</b><br>Цена: 25000 ₽/мес<br>Цена за м²: 962<br>Этаж: 2 из 9<br>Год постройки: 1977<br><a href='https://realty.yandex.ru/offer/9136617065006977536/' target='_blank'>Объявление</a></div>`)[0];
+                popup_579c24b8cc3ec66e843af915d7d7bac4.setContent(html_9891826ea7791edb24a9121b6b08d9b2);
+            
+        
+
+        circle_marker_90680853300ce27788bc1a6f75ad3785.bindPopup(popup_579c24b8cc3ec66e843af915d7d7bac4)
+        ;
+
+        
+    
+    
+            var circle_marker_c5f953d57b8480f716ee91497daac0d5 = L.circleMarker(
+                [64.55065, 40.558308],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26);
+        
+    
+        var popup_69edf76ad7b1ceca47f104814777a9e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2e807f9b0cc2d25c68faa38a65d822e0 = $(`<div id="html_2e807f9b0cc2d25c68faa38a65d822e0" style="width: 100.0%; height: 100.0%;"><b>2-комн., 48 м²</b><br>Цена: 28000 ₽/мес<br>Цена за м²: 583<br>Этаж: 1 из 5<br>Год постройки: 1973<br><a href='https://realty.yandex.ru/offer/9172097656123529984/' target='_blank'>Объявление</a></div>`)[0];
+                popup_69edf76ad7b1ceca47f104814777a9e3.setContent(html_2e807f9b0cc2d25c68faa38a65d822e0);
+            
+        
+
+        circle_marker_c5f953d57b8480f716ee91497daac0d5.bindPopup(popup_69edf76ad7b1ceca47f104814777a9e3)
+        ;
+
+        
+    
+    
+            marker_cluster_e4ef2d689d97246e4ddfcfa0d8c0be26.addTo(map_2c90261867d4c3fccdc1b1d1523d882c);
+        
+</script>
+</html>
